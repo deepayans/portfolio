@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Syne", sans-serif;
+  --font-mono: "DM Mono", monospace;
+  --font-body: "DM Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #020817;
+  color: #e2e8f0;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #020817;
+}
+::-webkit-scrollbar-thumb {
+  background: #00e5c4;
+  border-radius: 2px;
+}
+
+/* Selection */
+::selection {
+  background: rgba(0, 229, 196, 0.2);
+  color: #00e5c4;
+}
+
+/* Print styles for "Download Resume" */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+  canvas,
+  nav,
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Avatar spin animation */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

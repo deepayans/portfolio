@@ -1,0 +1,28 @@
+{"timestamp":"00:00:01.071","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:01.072","source":"Server","level":"LOG","message":"  We detected TypeScript in your project and reconfigured your tsconfig.json file for you."}
+{"timestamp":"00:00:01.076","source":"Server","level":"LOG","message":"  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:\n"}
+{"timestamp":"00:00:01.077","source":"Server","level":"LOG","message":"  \t- include was updated to add '.next/dev/types/**/*.ts'"}
+{"timestamp":"00:00:01.078","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:01.079","source":"Server","level":"LOG","message":"  The following mandatory changes were made to your tsconfig.json:\n"}
+{"timestamp":"00:00:01.081","source":"Server","level":"LOG","message":"  \t- jsx was set to react-jsx (next.js uses the React automatic runtime)"}
+{"timestamp":"00:00:01.082","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:01.273","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:15.045","source":"Server","level":"LOG","message":"○ Compiling / ..."}
+{"timestamp":"00:00:17.859","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:00:18.226","source":"Browser","level":"WARN","message":"Image with src \"/profile.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"}
+{"timestamp":"00:00:18.279","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/profile.jpg\\\" has \\\"fill\\\" but is missing \\\"sizes\\\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\\u001b[39m\" \"\\u001b[2m(file://C:/Users/Deepayan Sarkar/Desktop/ds-portfolio/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)\\u001b[22m\""}
+{"timestamp":"00:00:18.280","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/profile.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\u001b[39m"}
+{"timestamp":"00:05:29.718","source":"Server","level":"LOG","message":"✓ Compiled in 130ms"}
+{"timestamp":"00:05:34.925","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:05:35.296","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/profile.jpg\\\" has \\\"fill\\\" but is missing \\\"sizes\\\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\\u001b[39m\" \"\\u001b[2m(file://C:/Users/Deepayan Sarkar/Desktop/ds-portfolio/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)\\u001b[22m\""}
+{"timestamp":"00:05:35.297","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/profile.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\u001b[39m"}
+{"timestamp":"00:05:35.298","source":"Browser","level":"WARN","message":"Image with src \"/profile.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"}
+{"timestamp":"00:05:55.484","source":"Server","level":"LOG","message":"✓ Compiled in 99ms"}
+{"timestamp":"00:05:59.350","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
+{"timestamp":"00:05:59.584","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/profile.jpg\\\" has \\\"fill\\\" but is missing \\\"sizes\\\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\\u001b[39m\" \"\\u001b[2m(file://C:/Users/Deepayan Sarkar/Desktop/ds-portfolio/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)\\u001b[22m\""}
+{"timestamp":"00:05:59.584","source":"Browser","level":"WARN","message":"\u001b[33mImage with src \"/profile.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes\u001b[39m"}
+{"timestamp":"00:05:59.584","source":"Browser","level":"WARN","message":"Image with src \"/profile.jpg\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"}
+{"timestamp":"00:06:56.189","source":"Server","level":"LOG","message":"✓ Compiled in 103ms"}
+{"timestamp":"00:08:30.968","source":"Server","level":"LOG","message":"✓ Compiled in 52ms"}
+{"timestamp":"00:08:56.114","source":"Server","level":"LOG","message":"✓ Compiled in 83ms"}
+{"timestamp":"00:09:21.836","source":"Server","level":"LOG","message":"✓ Compiled in 52ms"}
