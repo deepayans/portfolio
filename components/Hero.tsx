@@ -18,11 +18,11 @@ export default function Hero() {
   const scrollToExp = () =>
     document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" });
 
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/Deepayan_Sarkar_CV.pdf";
-    link.download = "Deepayan_Sarkar_CV.pdf";
-    link.click();
+const handleDownload = () => {
+  window.open(
+    "https://drive.google.com/uc?export=download&id=13GzyJi0YHa3JXNdEQcCSWNWTSUsEV2w2",
+    "_blank"
+    );
   };
 
   return (
