@@ -40,19 +40,19 @@ export default function AnimatedBackground() {
     const PARTICLE_COUNT = () => (isMobile() ? 25 : 55);
     const LINE_DISTANCE = isMobile() ? 100 : 140;
 
-    // Color palette for blobs
     const blobColors = [
-      "rgba(0,229,196,",    // cyan
-      "rgba(124,58,237,",   // violet
-      "rgba(245,158,11,",   // amber
-      "rgba(0,229,196,",    // cyan again
-      "rgba(59,130,246,",   // blue
+      "rgba(0,229,196,",
+      "rgba(124,58,237,",
+      "rgba(245,158,11,",
+      "rgba(0,229,196,",
+      "rgba(59,130,246,",
     ];
 
     let particles: Particle[] = [];
     let blobs: Blob[] = [];
 
     function resize() {
+      if (!canvas) return;
       W = canvas.width = window.innerWidth;
       H = canvas.height = window.innerHeight;
     }
@@ -83,6 +83,7 @@ export default function AnimatedBackground() {
     }
 
     function drawBlobs() {
+      if (!ctx) return;
       blobs.forEach((b) => {
         const grad = ctx.createRadialGradient(b.x, b.y, 0, b.x, b.y, b.radius);
         grad.addColorStop(0, b.color + "0.055)");
@@ -96,6 +97,7 @@ export default function AnimatedBackground() {
     }
 
     function drawParticles() {
+      if (!ctx) return;
       particles.forEach((p) => {
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
@@ -105,6 +107,7 @@ export default function AnimatedBackground() {
     }
 
     function drawLines() {
+      if (!ctx) return;
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const a = particles[i], b = particles[j];
@@ -146,9 +149,9 @@ export default function AnimatedBackground() {
     }
 
     function draw() {
+      if (!ctx) return;
       ctx.clearRect(0, 0, W, H);
 
-      // Base dark gradient
       const base = ctx.createLinearGradient(0, 0, W, H);
       base.addColorStop(0, "#020817");
       base.addColorStop(0.5, "#0a1628");
@@ -156,7 +159,6 @@ export default function AnimatedBackground() {
       ctx.fillStyle = base;
       ctx.fillRect(0, 0, W, H);
 
-      // Subtle dot grid
       ctx.fillStyle = "rgba(255,255,255,0.018)";
       const gridSize = 36;
       for (let x = 0; x < W; x += gridSize) {

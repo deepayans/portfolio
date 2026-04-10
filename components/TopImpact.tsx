@@ -1,11 +1,12 @@
 "use client";
 
+import type { ElementType } from "react";
 import { motion, useInView, useMotionValue, animate } from "framer-motion";
 import { useRef, useEffect } from "react";
 import { Database, Zap, Clock } from "lucide-react";
 import { resume } from "@/data/resume";
 
-const icons: Record<string, React.ElementType> = {
+const icons: Record<string, ElementType> = {
   database: Database,
   zap: Zap,
   clock: Clock,
@@ -16,7 +17,6 @@ function AnimatedMetric({ value }: { value: string }) {
   const inView = useInView(ref, { once: true, margin: "-40px" });
   const motionVal = useMotionValue(0);
 
-  // Extract numeric part
   const match = value.match(/[\d.]+/);
   const num = match ? parseFloat(match[0]) : null;
   const prefix = value.replace(/[\d.]+.*/, "");
@@ -44,7 +44,6 @@ function AnimatedMetric({ value }: { value: string }) {
 export default function TopImpact() {
   return (
     <section className="relative border-y border-white/[0.06] bg-[rgba(0,229,196,0.03)] py-10">
-      {/* Glow line top */}
       <div className="absolute top-0 left-1/2 h-px w-2/3 -translate-x-1/2 bg-gradient-to-r from-transparent via-[rgba(0,229,196,0.4)] to-transparent" />
 
       <div className="mx-auto max-w-5xl px-6 md:px-10">

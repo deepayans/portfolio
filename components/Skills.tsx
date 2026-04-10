@@ -1,10 +1,11 @@
 "use client";
 
+import type { ElementType } from "react";
 import { motion } from "framer-motion";
 import { Code, BarChart2, Cloud, Target } from "lucide-react";
 import { resume } from "@/data/resume";
 
-const iconMap: Record<string, React.ElementType> = {
+const iconMap: Record<string, ElementType> = {
   code: Code,
   "bar-chart": BarChart2,
   cloud: Cloud,
@@ -75,9 +76,6 @@ export default function Skills() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: gi * 0.05 + si * 0.03 }}
                     className="cursor-default rounded-none border border-white/10 px-2.5 py-1 font-mono text-[11px] text-white/50 transition-all hover:text-white/80"
-                    style={{
-                      ["--hover-border" as string]: `${accent}60`,
-                    }}
                     onMouseEnter={(e) => {
                       (e.currentTarget as HTMLElement).style.borderColor = `${accent}50`;
                       (e.currentTarget as HTMLElement).style.color = accent;
