@@ -9,9 +9,9 @@ export const resume = {
       "4+ years turning data into decisions at Accenture → now going deeper into ML & AI at KEDGE. I build pipelines, models, and dashboards that actually ship.",
     location: "Bordeaux, France",
     email: "deepayans77@gmail.com",
-    phone: "+33-060-584-3923",
+    phone: "+33-605-843-923",
     availability: "May 2026",
-    workAuth: "France Work Authorization",
+    workAuth: "France Work Authorisation",
     links: {
       linkedin: "https://linkedin.com/in/deepayansarkar",
       github: "https://github.com/deepayans",
