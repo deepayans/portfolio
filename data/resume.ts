@@ -96,7 +96,11 @@ export const resume = {
         "Built an unsupervised music recommendation system by applying K-Means clustering to song-level audio features to uncover latent user taste patterns and evaluated performance using the Silhouette, Calinski-Harabasz, and Davies-Bouldin indices.",
         "Performed feature engineering and preprocessing to enhance clustering stability and designed a similarity-based recommendation approach to enable personalised and cold-start recommendations.",
       ],
-      metrics: [],
+      metrics: [
+        { value: "K-Means", label: "Algorithm" },
+        { value: "3", label: "Eval Indices" },
+        { value: "Cold-Start", label: "Enabled" },
+      ],
       color: "violet",
       link: null,
     },

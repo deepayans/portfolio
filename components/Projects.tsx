@@ -148,16 +148,13 @@ export default function Projects() {
 
               {/* Metrics */}
               {proj.metrics.length > 0 && (
-                <div
-                  className="mb-5 grid rounded-none border border-white/5 bg-white/[0.02] px-4 py-3"
-                  style={{ gridTemplateColumns: `repeat(${proj.metrics.length}, 1fr)` }}
-                >
+                <div className="mb-5 flex rounded-none border border-white/5 bg-white/[0.02] divide-x divide-white/5">
                   {proj.metrics.map((m) => (
-                    <div key={m.label} className="flex flex-col items-center justify-center text-center px-2">
-                      <div className="text-2xl font-black" style={{ color: c.text }}>
+                    <div key={m.label} className="flex flex-1 flex-col items-center justify-center py-3 px-2 text-center">
+                      <div className="text-xl font-black leading-tight" style={{ color: c.text }}>
                         {m.value}
                       </div>
-                      <div className="font-mono text-[10px] text-white/35 uppercase tracking-wider">{m.label}</div>
+                      <div className="mt-0.5 font-mono text-[9px] text-white/35 uppercase tracking-wider">{m.label}</div>
                     </div>
                   ))}
                 </div>
