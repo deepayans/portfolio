@@ -58,7 +58,7 @@ function CounterCard({ item, i }: { item: (typeof resume.achievements)[0]; i: nu
       viewport={{ once: true }}
       transition={{ duration: 0.55, delay: (i % 4) * 0.08, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ y: -4, transition: { duration: 0.2 } }}
-      className="group relative overflow-hidden border border-white/[0.07] bg-[rgba(10,22,40,0.7)] p-5 backdrop-blur-sm transition-all hover:border-white/[0.14] hover:shadow-glass"
+      className="group relative overflow-hidden border border-white/[0.07] bg-[rgba(10,22,40,0.7)] p-4 sm:p-5 backdrop-blur-sm transition-all hover:border-white/[0.14] hover:shadow-glass"
     >
       {/* Spotlight glow */}
       <div className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
@@ -102,7 +102,7 @@ export default function Achievements() {
         </h2>
       </motion.div>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-3 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4">
         {resume.achievements.map((a, i) => (
           <CounterCard key={a.label} item={a} i={i} />
         ))}

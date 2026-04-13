@@ -107,15 +107,18 @@ export default function Recommendations() {
 
               <div className="flex-1 min-w-0">
                 <p className="font-bold text-white/90 leading-tight">{rec.name}</p>
-                <p className="font-mono text-[11px] text-white/40 leading-snug mt-0.5">
+                <p className="font-mono text-[11px] text-white/40 leading-snug mt-0.5 truncate">
                   {rec.role}
                 </p>
                 <p className="font-mono text-[11px] leading-snug" style={{ color: rec.avatarColor }}>
                   {rec.company}
                 </p>
+                <p className="mt-1 font-mono text-[10px] tracking-wider text-white/25 sm:hidden">
+                  {rec.relation}
+                </p>
               </div>
 
-              <div className="shrink-0">
+              <div className="hidden sm:block shrink-0">
                 <span className="font-mono text-[10px] tracking-wider text-white/25 border border-white/[0.08] px-2.5 py-1 whitespace-nowrap">
                   {rec.relation}
                 </span>

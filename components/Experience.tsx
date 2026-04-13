@@ -64,29 +64,29 @@ export default function Experience() {
               {/* Card header */}
               <button
                 onClick={() => setOpen(open === i ? -1 : i)}
-                className="flex w-full items-start gap-4 p-6 text-left"
+                className="flex w-full items-start gap-3 p-4 sm:p-6 text-left"
               >
                 {/* Company icon */}
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-none border border-[rgba(0,229,196,0.2)] bg-[rgba(0,229,196,0.06)] text-[#00e5c4]">
-                  <Briefcase size={20} />
+                <div className="flex h-10 w-10 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-none border border-[rgba(0,229,196,0.2)] bg-[rgba(0,229,196,0.06)] text-[#00e5c4]">
+                  <Briefcase size={18} />
                 </div>
 
                 <div className="flex-1 min-w-0">
-                  <div className="flex flex-wrap items-start justify-between gap-3">
-                    <div>
-                      <h3 className="text-xl font-bold text-white">{exp.role}</h3>
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="min-w-0">
+                      <h3 className="text-base sm:text-xl font-bold text-white leading-snug">{exp.role}</h3>
                       <p className="mt-0.5 font-mono text-sm text-[#00e5c4]">{exp.company}</p>
                     </div>
                     <ChevronDown
                       size={18}
                       className={cn(
-                        "shrink-0 text-white/30 transition-transform duration-300 mt-1",
+                        "shrink-0 text-white/30 transition-transform duration-300 mt-0.5",
                         open === i && "rotate-180 text-[#00e5c4]"
                       )}
                     />
                   </div>
 
-                  <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1">
+                  <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1">
                     <span className="flex items-center gap-1.5 font-mono text-xs text-white/40">
                       <Calendar size={11} /> {exp.dates}
                     </span>
@@ -98,7 +98,7 @@ export default function Experience() {
               </button>
 
               {/* Metric chips preview */}
-              <div className="flex flex-wrap gap-2 px-6 pb-4">
+              <div className="flex flex-wrap gap-2 px-4 sm:px-6 pb-4">
                 {exp.metrics.map((m) => (
                   <span
                     key={m.label}
@@ -120,7 +120,7 @@ export default function Experience() {
                     transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                     className="overflow-hidden"
                   >
-                    <div className="border-t border-white/[0.06] p-6 pt-5">
+                    <div className="border-t border-white/[0.06] p-4 sm:p-6 pt-5">
                       {/* Bullets */}
                       <ul className="space-y-4">
                         {exp.bullets.map((b, bi) => (

@@ -148,9 +148,9 @@ export default function Projects() {
 
               {/* Metrics */}
               {proj.metrics.length > 0 && (
-                <div className="mb-5 flex rounded-none border border-white/5 bg-white/[0.02] divide-x divide-white/5">
+                <div className="mb-5 flex flex-wrap rounded-none border border-white/5 bg-white/[0.02] divide-x divide-white/5">
                   {proj.metrics.map((m) => (
-                    <div key={m.label} className="flex flex-1 flex-col items-center justify-center py-3 px-2 text-center">
+                    <div key={m.label} className="flex flex-1 basis-1/2 sm:basis-auto flex-col items-center justify-center py-3 px-2 text-center min-w-[60px]">
                       <div className="text-xl font-black leading-tight" style={{ color: c.text }}>
                         {m.value}
                       </div>

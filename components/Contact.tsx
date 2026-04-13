@@ -16,12 +16,19 @@ export default function Contact() {
     e.preventDefault();
     setStatus("sending");
     try {
-      const res = await fetch("https://formspree.io/f/xpwzgvqd", {
+      const res = await fetch("https://formsubmit.co/ajax/deepayans77@gmail.com", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          _subject: `Portfolio contact from ${form.name}`,
+          _captcha: "false",
+        }),
       });
-      setStatus(res.ok ? "sent" : "error");
+      const data = await res.json();
+      setStatus(data.success === "true" || res.ok ? "sent" : "error");
     } catch {
       setStatus("error");
     }

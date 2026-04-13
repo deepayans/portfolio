@@ -28,7 +28,7 @@ export default function Page() {
       <Nav />
 
       <main
-        className="transition-opacity duration-700"
+        className="transition-opacity duration-700 pb-20 md:pb-0"
         style={{ opacity: splashDone ? 1 : 0 }}
       >
         <Hero />
