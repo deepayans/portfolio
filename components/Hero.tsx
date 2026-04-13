@@ -78,10 +78,11 @@ const handleDownload = () => {
             <div className="relative h-28 w-28 rounded-full overflow-hidden border-2 border-[#020817] bg-[#0f2442]">
               <Image
                 src="/profile.jpg"
-                alt="Deepayan Sarkar"
+                alt="Deepayan Sarkar, Data Scientist"
                 fill
                 className="object-cover"
                 priority
+                sizes="112px"
               />
             </div>
             {/* Available dot */}

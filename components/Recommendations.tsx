@@ -98,6 +98,9 @@ export default function Recommendations() {
                 <img
                   src={rec.photo}
                   alt={rec.name}
+                  loading="lazy"
+                  width={48}
+                  height={48}
                   className="h-full w-full object-cover"
                 />
               </div>
