@@ -42,6 +42,15 @@ const COLOR_MAP: Record<string, { border: string; glow: string; text: string; bg
     gradFrom: "#ec4899",
     gradTo: "#f472b6",
   },
+  green: {
+    border: "rgba(34,197,94,0.25)",
+    glow: "rgba(34,197,94,0.12)",
+    text: "#4ade80",
+    bg: "rgba(34,197,94,0.04)",
+    badge: "border-[rgba(34,197,94,0.3)] text-[#4ade80] bg-[rgba(34,197,94,0.07)]",
+    gradFrom: "#16a34a",
+    gradTo: "#4ade80",
+  },
 };
 
 export default function Projects() {
@@ -140,10 +149,11 @@ export default function Projects() {
               {/* Metrics */}
               {proj.metrics.length > 0 && (
                 <div
-                  className="mb-5 flex flex-wrap gap-5 rounded-none border border-white/5 bg-white/[0.02] px-4 py-3"
+                  className="mb-5 grid rounded-none border border-white/5 bg-white/[0.02] px-4 py-3"
+                  style={{ gridTemplateColumns: `repeat(${proj.metrics.length}, 1fr)` }}
                 >
                   {proj.metrics.map((m) => (
-                    <div key={m.label} className="text-center">
+                    <div key={m.label} className="flex flex-col items-center justify-center text-center px-2">
                       <div className="text-2xl font-black" style={{ color: c.text }}>
                         {m.value}
                       </div>
@@ -174,7 +184,7 @@ export default function Projects() {
                   className="mt-5 inline-flex items-center gap-2 font-mono text-xs tracking-wider transition-all hover:gap-3"
                   style={{ color: c.text }}
                 >
-                  View Dashboard
+                  {proj.link.includes("github.com") ? "View on GitHub" : "View Dashboard"}
                   <ArrowUpRight size={14} />
                 </a>
               )}

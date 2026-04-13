@@ -12,6 +12,7 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
+import Recommendations from "@/components/Recommendations";
 import Footer from "@/components/Footer";
 
 export default function Page() {
@@ -37,6 +38,7 @@ export default function Page() {
         <Projects />
         <Skills />
         <Education />
+        <Recommendations />
         <Contact />
       </main>
 

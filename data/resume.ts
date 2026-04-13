@@ -120,6 +120,25 @@ export const resume = {
       link: null,
     },
     {
+      id: "vision",
+      title: "Offline Vision Assistant for the Visually Impaired",
+      context: "Personal Project · Flutter / Supervised ML",
+      type: "Mobile App · SML",
+      stack: ["Flutter", "Dart", "TensorFlow Lite", "Camera API", "Text-to-Speech", "Speech-to-Text", "Provider"],
+      bullets: [
+        "Built a fully offline Android accessibility app using Flutter that leverages on-device supervised machine learning to identify objects and scenes in real time, converting visual information into spoken audio feedback for visually impaired users.",
+        "Integrated camera, flutter_tts, and speech_to_text packages to enable a hands-free, voice-driven experience — allowing users to ask questions and receive instant audio descriptions without an internet connection.",
+        "Implemented a Provider-based state architecture and CI/CD workflow via GitHub Actions to automate APK builds, ensuring reliable releases and a production-ready deployment pipeline.",
+      ],
+      metrics: [
+        { value: "100%", label: "Offline" },
+        { value: "Real-time", label: "Inference" },
+        { value: "Android", label: "Platform" },
+      ],
+      color: "green",
+      link: "https://github.com/deepayans/SML-APK-Blind-App",
+    },
+    {
       id: "tableau",
       title: "China Import/Export Transport Analysis",
       context: "Tableau Public",
