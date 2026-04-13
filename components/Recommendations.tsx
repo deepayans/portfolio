@@ -9,7 +9,7 @@ const recommendations = [
     role: "Assistant Professor",
     company: "KEDGE Business School",
     relation: "Thesis Supervisor · March 2026",
-    avatar: "TZ",
+    photo: "/tianyuan-zhang.png",
     avatarColor: "#0ea5e9",
     text: "I've had the pleasure of supervising Deepayan for his MSc thesis in Data Analytics for Business at KEDGE Business School. While his research is still in progress, he has already proven himself to be a highly capable and analytical problem-solver. What stands out to me during our supervision sessions is his ability to take high-level guidance and translate it into rigorous research, confidently navigating challenges like label scarcity through solid statistical validation. Deepayan is a dedicated researcher who takes feedback well and continuously refines his methodologies. Any data science team would greatly benefit from his technical skills and analytical mindset.",
   },
@@ -18,7 +18,7 @@ const recommendations = [
     role: "Digital Analytics Strategist · Martech Specialist",
     company: "Accenture",
     relation: "Direct Manager · May 2025",
-    avatar: "TN",
+    photo: "/taqabul-nisha.png",
     avatarColor: "#f472b6",
     text: "I had the pleasure of working with Deepayan for a year on a client project. Although he joined the team a bit later, he quickly adapted to the role and took ownership of key deliverables easily. Deepayan is a smart and driven individual who consistently explores innovative approaches to problem solving and brings his own unique perspective to the team. He is a quick learner, always eager to pick up new technologies. I highly recommend Deepayan and look forward to seeing the great things he will achieve in the future.",
   },
@@ -90,16 +90,16 @@ export default function Recommendations() {
 
             {/* Author */}
             <div className="flex items-center gap-4">
-              {/* Avatar */}
+              {/* Avatar photo */}
               <div
-                className="flex h-11 w-11 shrink-0 items-center justify-center font-bold text-sm tracking-wider"
-                style={{
-                  background: `${rec.avatarColor}18`,
-                  border: `1px solid ${rec.avatarColor}35`,
-                  color: rec.avatarColor,
-                }}
+                className="h-12 w-12 shrink-0 overflow-hidden rounded-full"
+                style={{ border: `2px solid ${rec.avatarColor}50` }}
               >
-                {rec.avatar}
+                <img
+                  src={rec.photo}
+                  alt={rec.name}
+                  className="h-full w-full object-cover"
+                />
               </div>
 
               <div className="flex-1 min-w-0">
