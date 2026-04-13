@@ -84,7 +84,7 @@ export const resume = {
         { value: "33", label: "Categories" },
       ],
       color: "cyan",
-      link: null,
+      link: "https://github.com/deepayans/Multi-Label-Classification-for-Skincare-Products",
     },
     {
       id: "spotify",
@@ -102,7 +102,7 @@ export const resume = {
         { value: "Cold-Start", label: "Enabled" },
       ],
       color: "violet",
-      link: null,
+      link: "https://github.com/deepayans/Spotify-Music-Recommendation-System",
     },
     {
       id: "bnp",
