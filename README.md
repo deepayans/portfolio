@@ -121,6 +121,5 @@ Every line from the original resume appears in one of these fields.
 - ✅ 16 animated counter cards (Framer Motion + requestAnimationFrame)
 - ✅ Responsive: 360px mobile → 1280px+ desktop
 - ✅ `prefers-reduced-motion` respected everywhere
-- ✅ Dark mode default, light toggle available
 - ✅ Print-friendly "Download Resume" via `window.print()`
 - ✅ All resume content — zero lines dropped
