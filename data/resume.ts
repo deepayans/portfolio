@@ -128,7 +128,7 @@ export const resume = {
       title: "Offline Vision Assistant for the Visually Impaired",
       context: "Personal Project · Flutter / Supervised ML",
       type: "Mobile App · SLM",
-      stack: ["Flutter", "Dart", "TensorFlow Lite", "Camera API", "Text-to-Speech", "Speech-to-Text", "Gemma 3 1B", "Small Language Model"],
+      stack: ["Flutter", "Dart", "TensorFlow Lite", "Camera API", "Text-to-Speech", "Speech-to-Text", "Gemma 3 1B", "Small Language Model", "SDGs"],
       bullets: [
         "Built a fully offline Android accessibility app using Flutter that leverages on-device supervised machine learning to identify objects and scenes in real time, converting visual information into spoken audio feedback for visually impaired users.",
         "Integrated camera, flutter_tts, and speech_to_text packages to enable a hands-free, voice-driven experience — allowing users to ask questions and receive instant audio descriptions without an internet connection.",
