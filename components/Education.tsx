@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { GraduationCap, MapPin, Calendar, Award } from "lucide-react";
 import { resume } from "@/data/resume";
+import RevealText from "@/components/RevealText";
 
 export default function Education() {
   return (
@@ -18,11 +19,9 @@ export default function Education() {
           Education
         </p>
         <h2 className="text-5xl font-black tracking-tight text-white md:text-6xl">
-          Academic
+          <RevealText>Academic</RevealText>
           <br />
-          <span className="bg-gradient-to-r from-[#00e5c4] to-[#ec4899] bg-clip-text text-transparent">
-            Foundation.
-          </span>
+          <RevealText delay={0.2} className="bg-gradient-to-r from-[#00e5c4] to-[#ec4899] bg-clip-text text-transparent">Foundation.</RevealText>
         </h2>
       </motion.div>
 

@@ -14,6 +14,7 @@ import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import Recommendations from "@/components/Recommendations";
 import Footer from "@/components/Footer";
+import Cursor from "@/components/Cursor";
 
 export default function Page() {
   const [splashDone, setSplashDone] = useState(false);
@@ -21,6 +22,7 @@ export default function Page() {
 
   return (
     <>
+      <Cursor />
       {!splashDone && <SplashScreen onDone={() => setSplashDone(true)} />}
 
       <AnimatedBackground />

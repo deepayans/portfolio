@@ -25,6 +25,13 @@ body {
   overflow-x: hidden;
 }
 
+/* Custom cursor — only on devices with a fine pointer (mouse/trackpad) */
+@media (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 4px;
