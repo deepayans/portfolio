@@ -89,10 +89,10 @@ export default function Recommendations() {
             <div className="mb-6 h-px bg-white/[0.06]" />
 
             {/* Author */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-start gap-4">
               {/* Avatar photo */}
               <div
-                className="h-12 w-12 shrink-0 overflow-hidden rounded-full"
+                className="h-12 w-12 shrink-0 overflow-hidden rounded-full mt-0.5"
                 style={{ border: `2px solid ${rec.avatarColor}50` }}
               >
                 <img
@@ -107,19 +107,13 @@ export default function Recommendations() {
 
               <div className="flex-1 min-w-0">
                 <p className="font-bold text-white/90 leading-tight">{rec.name}</p>
-                <p className="font-mono text-[11px] text-white/40 leading-snug mt-0.5 truncate">
+                <p className="font-mono text-[11px] text-white/40 leading-snug mt-0.5">
                   {rec.role}
                 </p>
                 <p className="font-mono text-[11px] leading-snug" style={{ color: rec.avatarColor }}>
                   {rec.company}
                 </p>
-                <p className="mt-1 font-mono text-[10px] tracking-wider text-white/25 sm:hidden">
-                  {rec.relation}
-                </p>
-              </div>
-
-              <div className="hidden sm:block shrink-0">
-                <span className="font-mono text-[10px] tracking-wider text-white/25 border border-white/[0.08] px-2.5 py-1 whitespace-nowrap">
+                <span className="mt-2 inline-block font-mono text-[10px] tracking-wider text-white/25 border border-white/[0.08] px-2 py-0.5">
                   {rec.relation}
                 </span>
               </div>

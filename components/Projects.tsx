@@ -75,7 +75,7 @@ export default function Projects() {
         </h2>
       </motion.div>
 
-      <div className="grid gap-5 md:grid-cols-2">
+      <div className="grid gap-5 md:grid-cols-2 md:items-stretch">
         {resume.projects.map((proj, i) => {
           const c = COLOR_MAP[proj.color] ?? COLOR_MAP.cyan;
           return (
@@ -86,7 +86,7 @@ export default function Projects() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
               whileHover={{ y: -6 }}
-              className="group relative flex flex-col overflow-hidden border bg-[rgba(10,22,40,0.7)] p-7 backdrop-blur-sm transition-all duration-500"
+              className="group relative flex flex-col overflow-hidden border bg-[rgba(10,22,40,0.7)] p-7 backdrop-blur-sm transition-all duration-500 h-full"
               style={{
                 borderColor: c.border,
                 boxShadow: `0 0 0 0 ${c.glow}`,
