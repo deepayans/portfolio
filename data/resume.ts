@@ -6,12 +6,12 @@ export const resume = {
     summary:
       "Data Science student with 4+ years of industry experience in data analytics at Accenture, transitioning into machine learning and AI. Skilled in Python, SQL, and statistical modeling, with hands-on experience building NLP models, recommendation systems, and predictive analytics solutions using scikit-learn, XGBoost, and TensorFlow. Experienced in working with large-scale datasets, ETL pipelines, and A/B testing to drive data-informed decisions. Passionate about applying machine learning to real-world problems and seeking a Data Science Intern role to further develop and deploy scalable AI solutions.",
     shortSummary:
-      "4+ years of industry experience delivering data pipelines and analytics solutions at Accenture. Reduced marketing research turnaround from 6 weeks to under 1 hour using GPT-4o at a BNP Paribas hackathon. Currently advancing expertise in Machine Learning and AI at KEDGE Business School.",
+      "Data is not just my profession — it's how I think. 4+ years delivering data pipelines and analytics at scale at Accenture. Finalising an MSc in Data Analytics for Business at KEDGE Business School — open to end-of-studies internship and CDI opportunities across the EU.",
     location: "Bordeaux, France",
     email: "deepayans77@gmail.com",
     phone: "+33-605-843-923",
-    availability: "May 2026",
-    workAuth: "France Work Authorisation",
+    availability: "Now",
+    workAuth: "Bordeaux, France",
     links: {
       linkedin: "https://linkedin.com/in/deepayansarkar",
       github: "https://github.com/deepayans",
