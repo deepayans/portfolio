@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, MapPin, Calendar, Briefcase } from "lucide-react";
 import { resume } from "@/data/resume";
 import { cn } from "@/lib/utils";
-import RevealText from "@/components/RevealText";
 
 export default function Experience() {
   const [open, setOpen] = useState<number>(0);
@@ -25,9 +24,11 @@ export default function Experience() {
            Experience
         </p>
         <h2 className="text-5xl font-black tracking-tight text-white md:text-6xl">
-          <RevealText>Where I've Built</RevealText>
+          Where I've Built
           <br />
-          <RevealText delay={0.2} className="bg-gradient-to-r from-[#00e5c4] to-[#7c3aed] bg-clip-text text-transparent">Things.</RevealText>
+          <span className="bg-gradient-to-r from-[#00e5c4] to-[#7c3aed] bg-clip-text text-transparent">
+            Things.
+          </span>
         </h2>
       </motion.div>
 

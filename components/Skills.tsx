@@ -4,7 +4,6 @@ import type { ElementType } from "react";
 import { motion } from "framer-motion";
 import { Code, BarChart2, Cloud, Target } from "lucide-react";
 import { resume } from "@/data/resume";
-import RevealText from "@/components/RevealText";
 
 const iconMap: Record<string, ElementType> = {
   code: Code,
@@ -29,9 +28,11 @@ export default function Skills() {
           Skills
         </p>
         <h2 className="text-5xl font-black tracking-tight text-white md:text-6xl">
-          <RevealText>Technical</RevealText>
+          Technical
           <br />
-          <RevealText delay={0.2} className="bg-gradient-to-r from-[#f59e0b] to-[#00e5c4] bg-clip-text text-transparent">Arsenal.</RevealText>
+          <span className="bg-gradient-to-r from-[#f59e0b] to-[#00e5c4] bg-clip-text text-transparent">
+            Arsenal.
+          </span>
         </h2>
       </motion.div>
 
