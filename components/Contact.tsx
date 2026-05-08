@@ -64,9 +64,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
         >
           <p className="mb-8 max-w-md text-lg leading-relaxed text-white/55">
-            I'm actively looking for Data Science internship opportunities from{" "}
-            <span className="text-[#00e5c4]">May 2026</span>. Whether you have a role, a
-            project, or just want to talk data — I'd love to hear from you.
+            I'm actively looking for end-of-studies internship and CDI opportunities across the EU. Whether you have a role, a project, or just want to talk data — I'd love to hear from you.
           </p>
 
           {/* Availability card */}
@@ -82,8 +80,7 @@ export default function Contact() {
             </div>
             <p className="mb-4 text-sm text-white/50">
               Based in {resume.basics.location} with {resume.basics.workAuth}. Open to
-              internship roles in data science, machine learning, and analytics — in France or
-              internationally.
+              Based in Bordeaux, France with France Work Authorisation. Open to end-of-studies internship and CDI roles in data science, machine learning, and analytics across the EU.
             </p>
             <div className="flex flex-wrap gap-2">
               {["Data Science Intern", "ML Engineering", "Analytics", "NLP Research"].map((t) => (
