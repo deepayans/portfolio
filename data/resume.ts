@@ -11,7 +11,7 @@ export const resume = {
     email: "deepayans77@gmail.com",
     phone: "+33-605-843-923",
     availability: "Now",
-    workAuth: "France Work Authorisation",
+    workAuth: "French Work Authorisation",
     links: {
       linkedin: "https://linkedin.com/in/deepayansarkar",
       github: "https://github.com/deepayans",
