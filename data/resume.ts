@@ -53,7 +53,7 @@ export const resume = {
       school: "KEDGE Business School",
       degree: "Master of Science in Data Analytics for Business",
       level: "Master 2nd Year",
-      period: "Sep 2025 — Present",
+      period: "Sep 2025 — Apr 2027",
       location: "Bordeaux, France",
       current: true,
     },
