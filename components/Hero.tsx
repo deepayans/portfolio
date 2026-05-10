@@ -189,13 +189,10 @@ const handleDownload = () => {
         transition={{ delay: 1.5, duration: 0.6 }}
         className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
       >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          className="h-10 w-6 rounded-full border border-white/15 flex items-start justify-center pt-1.5"
-        >
+        <div className="h-10 w-6 rounded-full border border-white/15 flex items-start justify-center pt-1.5"
+          style={{ animation: "bounceY 2s ease-in-out infinite" }}>
           <div className="h-1.5 w-1.5 rounded-full bg-[#00e5c4] shadow-[0_0_6px_#00e5c4]" />
-        </motion.div>
+        </div>
       </motion.div>
 
     </section>

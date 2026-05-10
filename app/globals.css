@@ -25,6 +25,34 @@ body {
   overflow-x: hidden;
 }
 
+/* ── Animated background blobs (compositor thread, no JS) ───────────────── */
+@keyframes blobFloat1 {
+  0%, 100% { transform: translateX(-50%) translate(0px, 0px) scale(1); }
+  33%      { transform: translateX(-50%) translate(30px, -40px) scale(1.05); }
+  66%      { transform: translateX(-50%) translate(-20px, 20px) scale(0.95); }
+}
+@keyframes blobFloat2 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  33%      { transform: translate(-40px, 30px) scale(0.95); }
+  66%      { transform: translate(25px, -20px) scale(1.05); }
+}
+@keyframes blobFloat3 {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  50%      { transform: translate(20px, 30px) scale(1.03); }
+}
+
+/* ── Splash progress bar ─────────────────────────────────────────────────── */
+@keyframes progressFill {
+  from { width: 0%; }
+  to   { width: 100%; }
+}
+
+/* ── Hero scroll cue bounce ──────────────────────────────────────────────── */
+@keyframes bounceY {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(8px); }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 4px;
