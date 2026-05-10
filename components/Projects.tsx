@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 const COLOR_MAP: Record<string, { border: string; glow: string; text: string; bg: string; badge: string; gradFrom: string; gradTo: string }> = {
   cyan: {
-    border: "rgba(0,229,196,0.25)",
+    border: "rgba(0,229,196,0.4)",
     glow: "rgba(0,229,196,0.12)",
     text: "#00e5c4",
     bg: "rgba(0,229,196,0.04)",
@@ -16,7 +16,7 @@ const COLOR_MAP: Record<string, { border: string; glow: string; text: string; bg
     gradTo: "#0891b2",
   },
   violet: {
-    border: "rgba(124,58,237,0.3)",
+    border: "rgba(124,58,237,0.45)",
     glow: "rgba(124,58,237,0.12)",
     text: "#a78bfa",
     bg: "rgba(124,58,237,0.04)",
@@ -25,7 +25,7 @@ const COLOR_MAP: Record<string, { border: string; glow: string; text: string; bg
     gradTo: "#a78bfa",
   },
   amber: {
-    border: "rgba(245,158,11,0.3)",
+    border: "rgba(245,158,11,0.45)",
     glow: "rgba(245,158,11,0.1)",
     text: "#fbbf24",
     bg: "rgba(245,158,11,0.04)",
@@ -34,7 +34,7 @@ const COLOR_MAP: Record<string, { border: string; glow: string; text: string; bg
     gradTo: "#fbbf24",
   },
   pink: {
-    border: "rgba(236,72,153,0.3)",
+    border: "rgba(236,72,153,0.45)",
     glow: "rgba(236,72,153,0.1)",
     text: "#f472b6",
     bg: "rgba(236,72,153,0.04)",
@@ -43,7 +43,7 @@ const COLOR_MAP: Record<string, { border: string; glow: string; text: string; bg
     gradTo: "#f472b6",
   },
   green: {
-    border: "rgba(34,197,94,0.25)",
+    border: "rgba(34,197,94,0.4)",
     glow: "rgba(34,197,94,0.12)",
     text: "#4ade80",
     bg: "rgba(34,197,94,0.04)",

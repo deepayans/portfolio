@@ -229,22 +229,12 @@ export const resume = {
   ],
 
   achievements: [
-    { metric: "10M+", label: "Records processed daily", context: "ETL pipelines at Accenture", group: "scale" },
-    { metric: "50+", label: "KPIs tracked", context: "Power BI dashboards", group: "scale" },
-    { metric: "35%", label: "Processing time reduced", context: "ETL optimisation", group: "impact" },
-    { metric: "20%", label: "Operational efficiency gain", context: "Data visualisation solutions", group: "impact" },
-    { metric: "99.9%", label: "Cloud uptime maintained", context: "GCP infrastructure", group: "reliability" },
-    { metric: "1M+", label: "Rows analysed", context: "A/B testing & statistical analysis", group: "scale" },
-    { metric: "30%", label: "Customer experience uplift", context: "Product feature optimisation", group: "impact" },
-    { metric: "15+", label: "Stakeholders collaborated", context: "Cross-functional delivery", group: "leadership" },
-    { metric: "12+", label: "Analytical projects shipped", context: "Accenture", group: "leadership" },
-    { metric: "40+", label: "Hours saved monthly", context: "Automated reporting", group: "impact" },
-    { metric: "0.67", label: "Weighted F1 Score", context: "L'Oréal multi-label classifier", group: "ml" },
-    { metric: "6,240", label: "Products classified", context: "L'Oréal hackathon (33 categories)", group: "ml" },
-    { metric: "88.6%", label: "Relevance score", context: "AI Persona Bots — BNP Paribas", group: "ml" },
-    { metric: "97.8%", label: "Coherence score", context: "AI Persona Bots — BNP Paribas", group: "ml" },
-    { metric: "100%", label: "Fluency score", context: "AI Persona Bots — BNP Paribas", group: "ml" },
-    { metric: "<1 hr", label: "Research turnaround", context: "Reduced from 4–8 weeks", group: "impact" },
+    { metric: "10M+",  label: "Records processed daily",      context: "ETL pipelines at Accenture",        group: "scale"       },
+    { metric: "35%",   label: "Processing time reduced",      context: "ETL optimisation",                  group: "impact"      },
+    { metric: "99.9%", label: "Cloud uptime maintained",      context: "GCP infrastructure",                group: "reliability" },
+    { metric: "30%",   label: "Customer experience uplift",   context: "Product feature optimisation",      group: "impact"      },
+    { metric: "0.67",  label: "Weighted F1 Score",            context: "L'Oréal multi-label classifier",    group: "ml"          },
+    { metric: "<1 hr", label: "Research turnaround",          context: "Reduced from 4–8 weeks",            group: "impact"      },
   ],
 };
 

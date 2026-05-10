@@ -6,7 +6,7 @@ import { Mail, Phone, MapPin, Github, Linkedin, BarChart2, ExternalLink, Send } 
 import { resume } from "@/data/resume";
 
 const inputClass =
-  "w-full border border-white/[0.08] bg-[rgba(10,22,40,0.6)] px-4 py-3 text-sm text-white/80 placeholder-white/25 outline-none transition-all focus:border-[rgba(0,229,196,0.4)] focus:bg-[rgba(0,229,196,0.04)] focus:shadow-[0_0_0_1px_rgba(0,229,196,0.15)]";
+  "w-full border border-white/[0.14] bg-[rgba(10,22,40,0.6)] px-4 py-3 text-sm text-white/80 placeholder-white/25 outline-none transition-all focus:border-[rgba(0,229,196,0.55)] focus:bg-[rgba(0,229,196,0.04)] focus:shadow-[0_0_0_1px_rgba(0,229,196,0.2)]";
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });

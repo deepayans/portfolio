@@ -67,13 +67,18 @@ const handleDownload = () => {
         {/* Profile photo */}
         <motion.div variants={item} className="mb-8 flex justify-center">
           <div className="relative">
-            {/* Rotating border */}
+            {/* Static elegant gradient ring */}
             <div
-              className="absolute -inset-1 rounded-full opacity-75"
+              className="absolute -inset-[3px] rounded-full"
               style={{
-                background: "conic-gradient(from 0deg, #00e5c4, #7c3aed, #00e5c4)",
-                animation: "spin 6s linear infinite",
+                background: "linear-gradient(135deg, #00e5c4, #7c3aed, #ec4899, #00e5c4)",
+                opacity: 0.65,
               }}
+            />
+            {/* Subtle outer glow */}
+            <div
+              className="absolute -inset-[6px] rounded-full opacity-20 blur-md"
+              style={{ background: "linear-gradient(135deg, #00e5c4, #7c3aed)" }}
             />
             <div className="relative h-28 w-28 rounded-full overflow-hidden border-2 border-[#020817] bg-[#0f2442]">
               <Image
@@ -138,15 +143,15 @@ const handleDownload = () => {
         >
           <button
             onClick={scrollToExp}
-            className="group flex items-center gap-3 rounded-none border border-[rgba(0,229,196,0.4)] bg-[rgba(0,229,196,0.08)] px-8 py-4 font-mono text-sm tracking-[0.12em] text-[#00e5c4] uppercase transition-all hover:bg-[rgba(0,229,196,0.15)] hover:shadow-[0_0_30px_rgba(0,229,196,0.2)]"
+            className="group flex items-center gap-3 rounded-none border border-[#00e5c4] bg-[#00e5c4] px-8 py-4 font-mono text-sm tracking-[0.12em] text-[#020817] uppercase font-bold transition-all hover:bg-transparent hover:text-[#00e5c4] hover:shadow-[0_0_30px_rgba(0,229,196,0.25)]"
           >
-            View Experience
+            View My Work
             <ArrowDown size={16} className="transition-transform group-hover:translate-y-1" />
           </button>
 
           <button
             onClick={handleDownload}
-            className="flex items-center gap-3 rounded-none border border-white/10 bg-white/[0.04] px-8 py-4 font-mono text-sm tracking-[0.12em] text-white/60 uppercase transition-all hover:bg-white/[0.08] hover:text-white/90 hover:border-white/20"
+            className="flex items-center gap-3 rounded-none border border-white/20 bg-transparent px-8 py-4 font-mono text-sm tracking-[0.12em] text-white/70 uppercase transition-all hover:bg-white/[0.06] hover:text-white hover:border-white/40"
           >
             Download Resume
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -193,12 +198,6 @@ const handleDownload = () => {
         </motion.div>
       </motion.div>
 
-      <style jsx>{`
-        @keyframes spin {
-          from { transform: rotate(0deg); }
-          to { transform: rotate(360deg); }
-        }
-      `}</style>
     </section>
   );
 }

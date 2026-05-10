@@ -57,8 +57,8 @@ export default function Experience() {
               className={cn(
                 "ml-6 overflow-hidden border transition-all duration-500 md:ml-16",
                 open === i
-                  ? "border-[rgba(0,229,196,0.25)] bg-[rgba(0,229,196,0.04)] shadow-[0_0_40px_rgba(0,229,196,0.06)]"
-                  : "border-white/[0.07] bg-[rgba(10,22,40,0.6)] hover:border-white/[0.12]"
+                  ? "border-[rgba(0,229,196,0.4)] bg-[rgba(0,229,196,0.05)] shadow-[0_0_40px_rgba(0,229,196,0.08)]"
+                  : "border-white/[0.1] bg-[rgba(10,22,40,0.6)] hover:border-white/[0.18]"
               )}
             >
               {/* Card header */}
