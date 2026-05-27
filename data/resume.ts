@@ -225,6 +225,12 @@ export const resume = {
       icon: "🗄️",
       year: "2022",
     },
+    {
+      name: "Professional Scrum Master I",
+      issuer: "Scrum.org",
+      icon: "📋",
+      year: "2026",
+    },
 
   ],
 
