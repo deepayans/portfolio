@@ -1,67 +1,25 @@
 import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
+
 export const metadata: Metadata = {
-  title: "Deepayan Sarkar — Data Scientist",
-  description:
-    "Data Scientist with 4+ years at Accenture. Finalising an MSc in Data Analytics for Business at KEDGE Business School. Open to end-of-studies internship and CDI opportunities across the EU. Based in Paris.",
-  keywords: ["data science", "machine learning", "NLP", "Python", "Accenture", "KEDGE", "portfolio"],
-  authors: [{ name: "Deepayan Sarkar" }],
-  openGraph: {
-    title: "Deepayan Sarkar — Data Scientist",
-    description:
-      "Data Scientist with 4+ years at Accenture. Finalising an MSc at KEDGE Business School. Open to end-of-studies internship and CDI opportunities across the EU. Based in Paris, France.",
-    type: "website",
-    url: "https://deepayan.me",
-    images: [
-      {
-        url: "https://deepayan.me/profile.jpg",
-        width: 400,
-        height: 400,
-        alt: "Deepayan Sarkar — Data Scientist",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary",
-    title: "Deepayan Sarkar — Data Scientist",
-    description: "Data Scientist with 4+ years at Accenture. Available now — open to internship and CDI across the EU.",
-    images: ["https://deepayan.me/profile.jpg"],
-  },
+  title: "Deepayan Sarkar | Engineering Intelligence",
+  description: "Data Scientist specialising in predictive modelling and on-device AI.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en" className="dark">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Deepayan Sarkar",
-              jobTitle: "Data Scientist",
-              url: "https://deepayan.me",
-              image: "https://deepayan.me/profile.jpg",
-              email: "deepayans77@gmail.com",
-              address: { "@type": "PostalAddress", addressLocality: "Paris", addressCountry: "FR" },
-              sameAs: [
-                "https://linkedin.com/in/deepayansarkar",
-                "https://github.com/deepayans",
-              ],
-              alumniOf: [
-                { "@type": "CollegeOrUniversity", name: "KEDGE Business School" },
-                { "@type": "CollegeOrUniversity", name: "University of Engineering & Management" },
-              ],
-            }),
-          }}
-        />
-      </head>
-      {/* suppressHydrationWarning prevents hydration mismatch from browser extensions (e.g. Grammarly) */}
-      <body className="antialiased" suppressHydrationWarning>{children}</body>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-[#FAFAFA] text-[#111111]`}>
+        {children}
+      </body>
     </html>
   );
 }
