@@ -19,8 +19,9 @@ html {
 }
 
 body {
-  background: #020817;
-  color: #e2e8f0;
+  /* Updated for Light Theme */
+  background: #FAFAFA;
+  color: #111111;
   font-family: var(--font-body);
   overflow-x: hidden;
 }
@@ -53,22 +54,25 @@ body {
   50%      { transform: translateY(8px); }
 }
 
-/* Scrollbar */
+/* Scrollbar - Updated for Light Theme */
 ::-webkit-scrollbar {
   width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: #020817;
+  background: #FAFAFA;
 }
 ::-webkit-scrollbar-thumb {
-  background: #00e5c4;
+  background: #E5E7EB;
   border-radius: 2px;
 }
+::-webkit-scrollbar-thumb:hover {
+  background: #D1D5DB;
+}
 
-/* Selection */
+/* Selection - Updated for Light Theme */
 ::selection {
-  background: rgba(0, 229, 196, 0.2);
-  color: #00e5c4;
+  background: #111111;
+  color: #FFFFFF;
 }
 
 /* Print styles for "Download Resume" */
