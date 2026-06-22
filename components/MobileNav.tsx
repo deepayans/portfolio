@@ -23,11 +23,7 @@ export const MobileNav = () => {
 
   return (
     <div className="md:hidden flex items-center">
-      <button
-        onClick={() => setIsOpen(true)}
-        className="p-2 -mr-2 text-gray-800 hover:text-black focus:outline-none"
-        aria-label="Open Menu"
-      >
+      <button onClick={() => setIsOpen(true)} className="p-2 -mr-2 text-gray-800 hover:text-black focus:outline-none" aria-label="Open Menu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
           <line x1="4" y1="8" x2="20" y2="8"></line>
           <line x1="4" y1="16" x2="20" y2="16"></line>
@@ -44,14 +40,8 @@ export const MobileNav = () => {
             className="fixed inset-0 z-[100] bg-white flex flex-col px-8 pt-6 pb-8"
           >
             <div className="flex justify-between items-center w-full mb-16">
-              <div className="font-medium tracking-tight text-sm uppercase">
-                Deepayan Sarkar
-              </div>
-              <button
-                onClick={() => setIsOpen(false)}
-                className="p-2 -mr-2 text-gray-500 hover:text-black transition-colors"
-                aria-label="Close Menu"
-              >
+              <div className="font-medium tracking-tight text-sm uppercase">Deepayan Sarkar</div>
+              <button onClick={() => setIsOpen(false)} className="p-2 -mr-2 text-gray-500 hover:text-black transition-colors" aria-label="Close Menu">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -77,20 +67,10 @@ export const MobileNav = () => {
               ))}
             </div>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="mt-auto border-t border-gray-200 pt-8"
-            >
-              
-                href="/Deepayan_Sarkar_General_CV.pdf"
-                target="_blank"
-                rel="noreferrer"
-                className="flex items-center justify-between text-sm font-mono uppercase tracking-widest text-gray-500 hover:text-black transition-colors"
-              >
-                <span>Download Resumé</span>
-                <span>↓</span>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="mt-auto border-t border-gray-200 pt-8">
+              <a href="/Deepayan_Sarkar_General_CV.pdf" target="_blank" rel="noreferrer" className="flex items-center justify-between text-sm font-mono uppercase tracking-widest text-gray-500 hover:text-black transition-colors">
+                <span>Download Resum&eacute;</span>
+                <span>&#8595;</span>
               </a>
             </motion.div>
           </motion.div>
