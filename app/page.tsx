@@ -1,32 +1,18 @@
-"use client";
-
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
-
-// Premium Scroll-Reveal Wrapper
-const FadeIn = ({ children, delay = 0, className = "" }: { children: React.ReactNode, delay?: number, className?: string }) => (
-  <motion.div
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true, margin: "-100px" }}
-    transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }} // Apple-style easing curve
-    className={className}
-  >
-    {children}
-  </motion.div>
-);
+import { FadeIn } from '@/components/FadeIn';
 
 export default function Portfolio() {
   return (
-    <main className="selection:bg-black selection:text-white overflow-hidden">
+    <main className="selection:bg-black selection:text-white overflow-hidden bg-[#FAFAFA]">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-[#FAFAFA]/80 backdrop-blur-md z-50 border-b border-gray-100">
         <div className="w-full flex justify-between items-center py-6 px-8 md:px-16 max-w-7xl mx-auto">
           <div className="font-medium tracking-tight text-sm uppercase">
             Deepayan Sarkar
           </div>
-          <div className="flex gap-6 text-sm text-gray-500">
+          {/* Mobile-responsive navigation: Hidden on small screens to prevent layout breaks */}
+          <div className="hidden md:flex gap-6 text-sm text-gray-500">
             <a href="#experience" className="hover:text-black transition-colors">Experience</a>
             <a href="#projects" className="hover:text-black transition-colors">Work</a>
             <a href="#stack" className="hover:text-black transition-colors">Stack</a>
@@ -56,7 +42,7 @@ export default function Portfolio() {
 
           <FadeIn delay={0.3}>
             <p className="text-lg md:text-xl text-gray-600 max-w-2xl font-light leading-relaxed">
-              Production data engineer turned applied data scientist. Four years building large-scale ML analytics systems at Accenture, currently completing an MSc in Data Analytics for Business with a focus on Generative AI and computer vision.
+              Production data engineer turned applied data scientist. Four years driving efficiency at Accenture through large-scale ML analytics systems, currently bridging the gap between raw data and business impact via MSc research in Generative AI and computer vision.
             </p>
           </FadeIn>
 
@@ -87,36 +73,111 @@ export default function Portfolio() {
           <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-16 border-b border-gray-200 pb-4">Enterprise Engineering</h2>
         </FadeIn>
         
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
-          <FadeIn className="md:col-span-4" delay={0.1}>
-            <h3 className="text-3xl font-serif tracking-tight">Accenture</h3>
-            <p className="text-gray-500 mt-2">Software Engineer • 2021—2025</p>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12">
+          <FadeIn className="lg:col-span-4" delay={0.1}>
+            <h3 className="text-4xl font-serif tracking-tight text-black">Accenture</h3>
+            <p className="text-gray-500 mt-2 font-light">2021—2025 • Kolkata, India</p>
           </FadeIn>
-          <FadeIn className="md:col-span-8 space-y-8" delay={0.2}>
-            <p className="text-xl font-light leading-relaxed text-gray-700">
-              Built production ML analytics and data pipeline systems for international clients across the UK, US, and Singapore, sustaining 99.9% uptime.
-            </p>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-8 border-t border-gray-100">
+          
+          <div className="lg:col-span-8 space-y-20">
+            {/* Software Engineer Role */}
+            <FadeIn delay={0.2} className="space-y-6">
               <div>
-                <div className="text-4xl font-light tracking-tighter text-black">10M+</div>
-                <div className="text-sm text-gray-500 mt-2">Records Processed Daily (GCP Dataflow & BigQuery)</div>
+                <h4 className="text-2xl font-serif tracking-tight text-gray-800">Software Engineer</h4>
+                <p className="text-sm text-gray-400 font-mono mt-1">Sep 2023 — Aug 2025</p>
               </div>
+              <p className="text-lg font-light leading-relaxed text-gray-600">
+                Engineered robust Python/SQL data pipelines ensuring zero data loss across production workloads. Delivered 12+ end-to-end analytics projects on GCP on time and within budget by coordinating across 15+ cross-functional stakeholders.
+              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-gray-100">
+                <div>
+                  <div className="text-3xl font-light tracking-tighter text-black">10M+</div>
+                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-2">Daily Records Processed</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-light tracking-tighter text-black">35%</div>
+                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-2">ETL Time Reduction</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-light tracking-tighter text-green-600">40+ hrs</div>
+                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-2">Saved Monthly via Auto-Reporting</div>
+                </div>
+              </div>
+            </FadeIn>
+
+            {/* Associate Software Engineer Role */}
+            <FadeIn delay={0.3} className="space-y-6">
               <div>
-                <div className="text-4xl font-light tracking-tighter text-black">35%</div>
-                <div className="text-sm text-gray-500 mt-2">Reduction in Pipeline Processing Time</div>
+                <h4 className="text-2xl font-serif tracking-tight text-gray-800">Associate Software Engineer</h4>
+                <p className="text-sm text-gray-400 font-mono mt-1">Aug 2021 — Sep 2023</p>
               </div>
-              <div>
-                <div className="text-4xl font-light tracking-tighter text-black">40+ hrs</div>
-                <div className="text-sm text-gray-500 mt-2">Saved Monthly via 50+ Automated KPI Dashboards</div>
+              <p className="text-lg font-light leading-relaxed text-gray-600">
+                Maintained critical GCP analytics infrastructure (BigQuery, Cloud Storage, Dataflow) supporting business-critical workloads. Analysed large-scale datasets (1M+ rows) to surface trends and anomalies guiding product and marketing decisions.
+              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-gray-100">
+                <div>
+                  <div className="text-3xl font-light tracking-tighter text-black">99.9%</div>
+                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-2">GCP Infrastructure Uptime</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-light tracking-tighter text-green-600">30%</div>
+                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-2">Lift in Customer Experience Metrics via A/B Testing</div>
+                </div>
               </div>
-            </div>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof & Testimonials */}
+      <section className="py-32 px-8 md:px-16 border-y border-gray-100 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <FadeIn>
+            <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-16 border-b border-gray-200 pb-4">Professional Validation</h2>
           </FadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12">
+            {/* Academic Recommendation */}
+            <FadeIn delay={0.1} className="space-y-8 flex flex-col justify-between">
+              <blockquote className="text-xl md:text-2xl font-serif italic text-gray-800 leading-relaxed">
+                "Deepayan is a highly capable and analytical problem-solver. What stands out to me is his ability to take high-level guidance and translate it into rigorous research, confidently navigating challenges like label scarcity through solid statistical validation."
+              </blockquote>
+              <div className="flex items-center gap-4 pt-6 border-t border-gray-100">
+                <div className="w-12 h-12 bg-gray-100 rounded-full overflow-hidden border border-gray-200">
+                   {/* Placeholder: Save an image as tianyuan.jpg in your public folder to render this */}
+                   <div className="w-full h-full flex items-center justify-center text-gray-400 font-serif">TZ</div>
+                </div>
+                <div>
+                  <p className="font-medium text-black">Tianyuan Zhang</p>
+                  <p className="text-xs text-gray-500">Assistant Professor, KEDGE Business School</p>
+                </div>
+              </div>
+            </FadeIn>
+
+            {/* Professional Recommendation */}
+            <FadeIn delay={0.2} className="space-y-8 flex flex-col justify-between">
+              <blockquote className="text-xl md:text-2xl font-serif italic text-gray-800 leading-relaxed">
+                "Deepayan took ownership of key deliverables easily. He is a smart and driven individual who consistently explores innovative approaches to problem solving and brings his own unique perspective to the team. He is a quick learner, always eager to pick up new technologies."
+              </blockquote>
+              <div className="flex items-center gap-4 pt-6 border-t border-gray-100">
+                <div className="w-12 h-12 bg-gray-100 rounded-full overflow-hidden border border-gray-200">
+                   {/* Placeholder: Save an image as taqabul.jpg in your public folder to render this */}
+                   <div className="w-full h-full flex items-center justify-center text-gray-400 font-serif">TN</div>
+                </div>
+                <div>
+                  <p className="font-medium text-black">Taqabul Nisha</p>
+                  <p className="text-xs text-gray-500">Digital Analytics Lead at e& UAE</p>
+                </div>
+              </div>
+            </FadeIn>
+          </div>
         </div>
       </section>
 
       {/* Project Showroom */}
-      <section id="projects" className="py-32 px-8 md:px-16 max-w-7xl mx-auto border-t border-gray-100">
+      <section id="projects" className="py-32 px-8 md:px-16 max-w-7xl mx-auto">
         <FadeIn>
           <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-16 border-b border-gray-200 pb-4">Applied Projects & Hackathons</h2>
         </FadeIn>
@@ -245,7 +306,7 @@ export default function Portfolio() {
           <FadeIn delay={0.2} className="space-y-6">
             <h4 className="font-serif text-2xl border-l-2 border-black pl-4">Cloud & Data Engineering</h4>
             <ul className="space-y-3 text-gray-600 font-light">
-              <li>GCP (BigQuery, Dataflow)</li>
+              <li>GCP (BigQuery, Dataflow, Cloud Storage)</li>
               <li>Airflow & ETL Pipelines</li>
               <li>Docker & CI/CD</li>
               <li>MLOps Architecture</li>
@@ -314,43 +375,42 @@ export default function Portfolio() {
       </section>
 
       {/* Expanded Utility Footer */}
-      <FadeIn delay={0.1}>
-        <footer className="bg-[#111111] text-white pt-32 pb-16 px-8 md:px-16 mt-16 rounded-t-[3rem]">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-24">
-              <div>
-                <h2 className="text-5xl md:text-7xl font-serif tracking-tighter mb-6">Let's build <br/> something.</h2>
-                <p className="text-gray-400 font-light max-w-sm mb-8">
-                  Currently seeking a 4-6 month End-of-Studies Internship in Paris, starting July 2026. 
-                </p>
-                <a 
-                  href="mailto:deepayans77@gmail.com"
-                  className="inline-flex items-center gap-2 text-lg font-medium border-b border-white pb-1 hover:text-gray-300 hover:border-gray-300 transition-colors"
-                >
-                  deepayans77@gmail.com ↗
-                </a>
-              </div>
-              
-              <div className="flex flex-col md:items-end justify-start space-y-4 text-gray-400 font-light">
-                <p className="text-white font-medium mb-2 uppercase tracking-widest text-xs font-mono">Connect</p>
-                <a href="https://www.linkedin.com/in/deepayansarkar/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
-                <a href="https://github.com/deepayans" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
-                <a href="/Deepayan_Sarkar_General_CV.pdf" target="_blank" rel="noreferrer" className="hover:text-white transition-colors mt-4 text-white underline underline-offset-4 decoration-gray-600">Download Resumé</a>
-              </div>
+      <footer className="bg-[#111111] text-white pt-32 pb-16 px-8 md:px-16 mt-16 rounded-t-[3rem]" id="top">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-24">
+            <div>
+              <h2 className="text-5xl md:text-7xl font-serif tracking-tighter mb-6">Let's build <br/> something.</h2>
+              <p className="text-gray-400 font-light max-w-sm mb-8">
+                Currently seeking a 4-6 month End-of-Studies Internship in Paris, starting July 2026. 
+              </p>
+              <a 
+                href="mailto:deepayans77@gmail.com"
+                className="inline-flex items-center gap-2 text-lg font-medium border-b border-white pb-1 hover:text-gray-300 hover:border-gray-300 transition-colors"
+              >
+                deepayans77@gmail.com ↗
+              </a>
             </div>
             
-            <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800 text-xs text-gray-500 font-mono">
-              <p>© {new Date().getFullYear()} Deepayan Sarkar. All rights reserved.</p>
-              <button 
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="mt-4 md:mt-0 hover:text-white transition-colors uppercase tracking-widest"
-              >
-                Back to Top ↑
-              </button>
+            <div className="flex flex-col md:items-end justify-start space-y-4 text-gray-400 font-light">
+              <p className="text-white font-medium mb-2 uppercase tracking-widest text-xs font-mono">Connect</p>
+              <a href="https://www.linkedin.com/in/deepayansarkar/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
+              <a href="https://github.com/deepayans" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
+              <a href="/Deepayan_Sarkar_General_CV.pdf" target="_blank" rel="noreferrer" className="hover:text-white transition-colors mt-4 text-white underline underline-offset-4 decoration-gray-600">Download Resumé</a>
             </div>
           </div>
-        </footer>
-      </FadeIn>
+          
+          <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800 text-xs text-gray-500 font-mono">
+            <p>© {new Date().getFullYear()} Deepayan Sarkar. All rights reserved.</p>
+            {/* Standard anchor tag to maintain Server Component compatibility */}
+            <a 
+              href="#"
+              className="mt-4 md:mt-0 hover:text-white transition-colors uppercase tracking-widest"
+            >
+              Back to Top ↑
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
