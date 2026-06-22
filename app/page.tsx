@@ -7,7 +7,6 @@ import { CountUp } from '@/components/CountUp';
 export default function Portfolio() {
   return (
     <main className="selection:bg-black selection:text-white overflow-hidden bg-[#FAFAFA]">
-      {/* Navigation */}
       <nav className="fixed top-0 w-full bg-[#FAFAFA]/80 backdrop-blur-md z-50 border-b border-gray-100">
         <div className="w-full flex justify-between items-center py-5 px-6 md:py-6 md:px-16 max-w-7xl mx-auto">
           <div className="font-medium tracking-tight text-sm uppercase">
@@ -23,7 +22,6 @@ export default function Portfolio() {
         </div>
       </nav>
 
-      {/* Hero Section */}
       <section className="flex flex-col justify-center min-h-screen px-6 md:px-16 max-w-7xl mx-auto pt-20">
         <div className="max-w-4xl space-y-6 md:space-y-8">
           <FadeIn delay={0.1}>
@@ -35,33 +33,22 @@ export default function Portfolio() {
               Available July 2026 • 4–6 Months Internship • Paris, France
             </div>
           </FadeIn>
-
           <FadeIn delay={0.2}>
             <h1 className="text-5xl xs:text-6xl md:text-8xl tracking-tighter leading-[0.9] font-serif">
               Engineering <br /> Intelligence.
             </h1>
           </FadeIn>
-
           <FadeIn delay={0.3}>
             <p className="text-base md:text-xl text-gray-600 max-w-2xl font-light leading-relaxed">
               Production data engineer turned applied data scientist. Four years driving efficiency at Accenture through large-scale ML analytics systems, currently bridging the gap between raw data and business impact via MSc research in Generative AI and computer vision.
             </p>
           </FadeIn>
-
           <FadeIn delay={0.4}>
             <div className="pt-6 md:pt-8 flex flex-wrap gap-3 md:gap-4 items-center">
-              
-                href="mailto:deepayans77@gmail.com"
-                className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-white bg-black rounded-full hover:bg-gray-800 transition-all duration-300"
-              >
+              <a href="mailto:deepayans77@gmail.com" className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-white bg-black rounded-full hover:bg-gray-800 transition-all duration-300">
                 {"Let's Talk →"}
               </a>
-              
-                href="/Deepayan_Sarkar_General_CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-black bg-white border border-gray-200 rounded-full hover:bg-gray-50 transition-all duration-300"
-              >
+              <a href="/Deepayan_Sarkar_General_CV.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-black bg-white border border-gray-200 rounded-full hover:bg-gray-50 transition-all duration-300">
                 {"Download CV ↓"}
               </a>
             </div>
@@ -69,18 +56,15 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Enterprise Experience Section */}
       <section id="experience" className="py-16 md:py-32 px-6 md:px-16 max-w-7xl mx-auto border-t border-gray-100">
         <FadeIn>
           <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-12 md:mb-16 border-b border-gray-200 pb-4">Enterprise Engineering</h2>
         </FadeIn>
-
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
           <FadeIn className="lg:col-span-4" delay={0.1}>
             <h3 className="text-3xl md:text-4xl font-serif tracking-tight text-black">Accenture</h3>
             <p className="text-gray-500 mt-2 font-light">2021—2025 • Kolkata, India</p>
           </FadeIn>
-
           <div className="lg:col-span-8 space-y-16 md:space-y-20">
             <FadeIn delay={0.2} className="space-y-6">
               <div>
@@ -105,7 +89,6 @@ export default function Portfolio() {
                 </div>
               </div>
             </FadeIn>
-
             <FadeIn delay={0.3} className="space-y-6">
               <div>
                 <h4 className="text-xl md:text-2xl font-serif tracking-tight text-gray-800">Associate Software Engineer</h4>
@@ -129,7 +112,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Social Proof & Testimonials */}
       <section className="py-16 md:py-32 px-6 md:px-16 border-y border-gray-100 bg-white">
         <div className="max-w-7xl mx-auto">
           <FadeIn>
@@ -150,7 +132,6 @@ export default function Portfolio() {
                 </div>
               </div>
             </FadeIn>
-
             <FadeIn delay={0.2} className="space-y-8 flex flex-col justify-between">
               <blockquote className="text-lg md:text-2xl font-serif italic text-gray-800 leading-relaxed">
                 &ldquo;Deepayan took ownership of key deliverables easily. He is a smart and driven individual who consistently explores innovative approaches to problem solving and brings his own unique perspective to the team. He is a quick learner, always eager to pick up new technologies.&rdquo;
@@ -169,21 +150,14 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Project Showroom */}
       <section id="projects" className="py-16 md:py-32 px-6 md:px-16 max-w-7xl mx-auto">
         <FadeIn>
           <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-12 md:mb-16 border-b border-gray-200 pb-4">Applied Projects &amp; Hackathons</h2>
         </FadeIn>
-
         <div className="space-y-20 md:space-y-32">
           <div className="group relative grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <FadeIn className="lg:col-span-7 bg-gray-100 rounded-[2rem] aspect-video flex items-center justify-center overflow-hidden border border-gray-200 relative">
-              <Image
-                src="/azure-architecture.jpg"
-                alt="AI Persona Bots Architecture"
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-              />
+              <Image src="/azure-architecture.jpg" alt="AI Persona Bots Architecture" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
             </FadeIn>
             <FadeIn className="lg:col-span-5 space-y-5 md:space-y-6" delay={0.2}>
               <div className="text-xs font-mono text-blue-600 uppercase tracking-widest">BNP Paribas Hackathon Winner</div>
@@ -208,7 +182,6 @@ export default function Portfolio() {
               </div>
             </FadeIn>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8">
             <FadeIn delay={0.1}>
               <div className="space-y-5 md:space-y-6">
@@ -232,7 +205,6 @@ export default function Portfolio() {
                 </div>
               </div>
             </FadeIn>
-
             <FadeIn delay={0.3}>
               <div className="space-y-5 md:space-y-6">
                 <div className="bg-gray-100 rounded-[2rem] aspect-[4/3] overflow-hidden border border-gray-200 relative group">
@@ -259,7 +231,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Tech Stack Matrix */}
       <section id="stack" className="py-16 md:py-32 px-6 md:px-16 max-w-7xl mx-auto bg-white border-t border-gray-100">
         <FadeIn>
           <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-12 md:mb-16 border-b border-gray-200 pb-4">Technical Specifications</h2>
@@ -295,7 +266,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Academic & Credentials */}
       <section id="education" className="py-16 md:py-32 px-6 md:px-16 max-w-7xl mx-auto border-t border-gray-100">
         <FadeIn>
           <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-12 md:mb-16 border-b border-gray-200 pb-4">Academic &amp; Credentials</h2>
@@ -321,7 +291,6 @@ export default function Portfolio() {
               <p className="text-gray-600 font-light">BEng in Electronics &amp; Communication Engineering</p>
             </div>
           </FadeIn>
-
           <FadeIn delay={0.3} className="md:col-span-5 space-y-8">
             <h3 className="text-xl md:text-2xl font-serif tracking-tight border-l-2 border-black pl-4 mb-8">Certifications</h3>
             <ul className="space-y-6">
@@ -346,7 +315,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-[#111111] text-white pt-20 md:pt-32 pb-16 px-6 md:px-16 mt-16 rounded-t-[2rem] md:rounded-t-[3rem]" id="top">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 mb-16 md:mb-24">
@@ -355,10 +323,7 @@ export default function Portfolio() {
               <p className="text-gray-400 font-light max-w-sm mb-8 text-sm md:text-base">
                 Currently seeking a 4–6 month End-of-Studies Internship in Paris, starting July 2026.
               </p>
-              
-                href="mailto:deepayans77@gmail.com"
-                className="inline-flex items-center gap-2 text-base md:text-lg font-medium border-b border-white pb-1 hover:text-gray-300 hover:border-gray-300 transition-colors"
-              >
+              <a href="mailto:deepayans77@gmail.com" className="inline-flex items-center gap-2 text-base md:text-lg font-medium border-b border-white pb-1 hover:text-gray-300 hover:border-gray-300 transition-colors">
                 deepayans77@gmail.com ↗
               </a>
             </div>
