@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { FadeIn } from '@/components/FadeIn';
+import { MobileNav } from '@/components/MobileNav';
 
 export default function Portfolio() {
   return (
@@ -11,13 +12,17 @@ export default function Portfolio() {
           <div className="font-medium tracking-tight text-sm uppercase">
             Deepayan Sarkar
           </div>
-          {/* Mobile-responsive navigation: Hidden on small screens to prevent layout breaks */}
+          
+          {/* Desktop Navigation */}
           <div className="hidden md:flex gap-6 text-sm text-gray-500">
             <a href="#experience" className="hover:text-black transition-colors">Experience</a>
             <a href="#projects" className="hover:text-black transition-colors">Work</a>
             <a href="#stack" className="hover:text-black transition-colors">Stack</a>
             <a href="https://www.linkedin.com/in/deepayansarkar/" target="_blank" rel="noreferrer" className="hover:text-black transition-colors">LinkedIn</a>
           </div>
+
+          {/* Mobile Navigation */}
+          <MobileNav />
         </div>
       </nav>
 
@@ -146,7 +151,6 @@ export default function Portfolio() {
               </blockquote>
               <div className="flex items-center gap-4 pt-6 border-t border-gray-100">
                 <div className="w-12 h-12 bg-gray-100 rounded-full overflow-hidden border border-gray-200">
-                   {/* Placeholder: Save an image as tianyuan.jpg in your public folder to render this */}
                    <div className="w-full h-full flex items-center justify-center text-gray-400 font-serif">TZ</div>
                 </div>
                 <div>
@@ -163,7 +167,6 @@ export default function Portfolio() {
               </blockquote>
               <div className="flex items-center gap-4 pt-6 border-t border-gray-100">
                 <div className="w-12 h-12 bg-gray-100 rounded-full overflow-hidden border border-gray-200">
-                   {/* Placeholder: Save an image as taqabul.jpg in your public folder to render this */}
                    <div className="w-full h-full flex items-center justify-center text-gray-400 font-serif">TN</div>
                 </div>
                 <div>
@@ -401,7 +404,6 @@ export default function Portfolio() {
           
           <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800 text-xs text-gray-500 font-mono">
             <p>© {new Date().getFullYear()} Deepayan Sarkar. All rights reserved.</p>
-            {/* Standard anchor tag to maintain Server Component compatibility */}
             <a 
               href="#"
               className="mt-4 md:mt-0 hover:text-white transition-colors uppercase tracking-widest"
