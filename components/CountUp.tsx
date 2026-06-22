@@ -3,12 +3,11 @@ import { useEffect, useRef, useState } from "react";
 import { useInView } from "framer-motion";
 
 type Props = {
-  value: string;        // e.g. "10M+", "35%", "99.9%", "40+ hrs", "30%"
+  value: string;
   className?: string;
 };
 
 function parseValue(raw: string): { prefix: string; number: number; suffix: string } {
-  // Handles: "10M+", "35%", "99.9%", "40+ hrs", "30%", "<1 hr", "97.8%"
   const match = raw.match(/^([<]?)(\d+\.?\d*)(.*)/);
   if (!match) return { prefix: "", number: 0, suffix: raw };
   return {
