@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -24,7 +23,7 @@ export const MobileNav = () => {
 
   return (
     <div className="md:hidden flex items-center">
-      <button 
+      <button
         onClick={() => setIsOpen(true)}
         className="p-2 -mr-2 text-gray-800 hover:text-black focus:outline-none"
         aria-label="Open Menu"
@@ -42,13 +41,13 @@ export const MobileNav = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-[100] bg-white/95 backdrop-blur-xl flex flex-col px-8 pt-6 pb-8"
+            className="fixed inset-0 z-[100] bg-white flex flex-col px-8 pt-6 pb-8"
           >
             <div className="flex justify-between items-center w-full mb-16">
               <div className="font-medium tracking-tight text-sm uppercase">
                 Deepayan Sarkar
               </div>
-              <button 
+              <button
                 onClick={() => setIsOpen(false)}
                 className="p-2 -mr-2 text-gray-500 hover:text-black transition-colors"
                 aria-label="Close Menu"
@@ -78,14 +77,14 @@ export const MobileNav = () => {
               ))}
             </div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
               className="mt-auto border-t border-gray-200 pt-8"
             >
-              <a 
-                href="/Deepayan_Sarkar_General_CV.pdf" 
+              
+                href="/Deepayan_Sarkar_General_CV.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center justify-between text-sm font-mono uppercase tracking-widest text-gray-500 hover:text-black transition-colors"
