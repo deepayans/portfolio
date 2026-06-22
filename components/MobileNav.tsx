@@ -37,11 +37,11 @@ export const MobileNav = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="fixed inset-0 z-[100] bg-white flex flex-col px-8 pt-6 pb-8"
+            style={{ position: 'fixed', inset: 0, zIndex: 9999, backgroundColor: '#FAFAFA', display: 'flex', flexDirection: 'column', padding: '24px 32px 32px' }}
           >
-            <div className="flex justify-between items-center w-full mb-16">
-              <div className="font-medium tracking-tight text-sm uppercase">Deepayan Sarkar</div>
-              <button onClick={() => setIsOpen(false)} className="p-2 -mr-2 text-gray-500 hover:text-black transition-colors" aria-label="Close Menu">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '64px' }}>
+              <div style={{ fontWeight: 500, fontSize: '14px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Deepayan Sarkar</div>
+              <button onClick={() => setIsOpen(false)} style={{ padding: '8px', color: '#6b7280', background: 'none', border: 'none', cursor: 'pointer' }} aria-label="Close Menu">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                   <line x1="18" y1="6" x2="6" y2="18"></line>
                   <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -49,7 +49,7 @@ export const MobileNav = () => {
               </button>
             </div>
 
-            <div className="flex flex-col gap-8 text-3xl font-serif tracking-tight">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
               {navLinks.map((link, i) => (
                 <motion.a
                   key={link.name}
@@ -60,15 +60,20 @@ export const MobileNav = () => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.1 + (i * 0.1), duration: 0.4 }}
-                  className="hover:text-gray-500 transition-colors"
+                  style={{ fontSize: '30px', fontFamily: 'Georgia, serif', letterSpacing: '-0.02em', color: '#111', textDecoration: 'none' }}
                 >
                   {link.name} {link.external && "↗"}
                 </motion.a>
               ))}
             </div>
 
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} className="mt-auto border-t border-gray-200 pt-8">
-              <a href="/Deepayan_Sarkar_General_CV.pdf" target="_blank" rel="noreferrer" className="flex items-center justify-between text-sm font-mono uppercase tracking-widest text-gray-500 hover:text-black transition-colors">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5 }}
+              style={{ marginTop: 'auto', borderTop: '1px solid #e5e7eb', paddingTop: '32px' }}
+            >
+              <a href="/Deepayan_Sarkar_General_CV.pdf" target="_blank" rel="noreferrer" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12px', fontFamily: 'monospace', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#6b7280', textDecoration: 'none' }}>
                 <span>Download Resum&eacute;</span>
                 <span>&#8595;</span>
               </a>
