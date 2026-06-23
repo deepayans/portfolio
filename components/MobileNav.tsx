@@ -47,7 +47,7 @@ export const MobileNav = () => {
           </div>
 
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }} style={{ marginTop: 'auto', borderTop: '1px solid #e5e7eb', paddingTop: '32px' }}>
-            <a href="/Deepayan_Sarkar_General_CV.pdf" target="_blank" rel="noreferrer" style={cvLinkStyle}>
+            <a href="https://drive.google.com/uc?export=download&id=13GzyJi0YHa3JXNdEQcCSWNWTSUsEV2w2" target="_blank" rel="noreferrer" style={cvLinkStyle}>
               <span>Download Resum&eacute;</span><span>&#8595;</span>
             </a>
           </motion.div>
