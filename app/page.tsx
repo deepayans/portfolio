@@ -166,7 +166,7 @@ export default function Portfolio() {
               <div className="grid grid-cols-2 gap-4 py-4 border-y border-gray-100 mt-4">
                 <div>
                   <CountUp value="97.8%" className="text-2xl md:text-3xl font-light tracking-tighter text-black" />
-                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">Accuracy</div>
+                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">Coherence Score</div>
                 </div>
                 <div>
                   <div className="text-base md:text-lg font-light tracking-tighter text-black mt-2">LLM-as-a-Judge</div>
@@ -180,11 +180,12 @@ export default function Portfolio() {
               </div>
             </FadeIn>
           </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8">
             <FadeIn delay={0.1}>
               <div className="space-y-5 md:space-y-6">
-                <div className="bg-gray-100 rounded-[2rem] aspect-[4/3] overflow-hidden border border-gray-200 relative group">
-                  <Image src="/data-infra.jpg" alt="Multi-Label Classifier" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="bg-gray-100 rounded-[2rem] aspect-video overflow-hidden border border-gray-200 relative group">
+                  <Image src="/data-infra.jpg" alt="Multi-Label Classifier" fill className="object-contain transition-transform duration-700 group-hover:scale-105" />
                 </div>
                 <div className="text-xs font-mono text-purple-600 uppercase tracking-widest">{"L'Oreal Hackathon"}</div>
                 <h3 className="text-2xl font-serif tracking-tight">Skincare Product Classifier</h3>
@@ -205,8 +206,8 @@ export default function Portfolio() {
             </FadeIn>
             <FadeIn delay={0.3}>
               <div className="space-y-5 md:space-y-6">
-                <div className="bg-gray-100 rounded-[2rem] aspect-[4/3] overflow-hidden border border-gray-200 relative group">
-                  <Image src="/vision-app.jpg" alt="Vision Assistant App" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                <div className="bg-gray-100 rounded-[2rem] aspect-video overflow-hidden border border-gray-200 relative group">
+                  <Image src="/vision-app.jpg" alt="Vision Assistant App" fill className="object-contain transition-transform duration-700 group-hover:scale-105" />
                 </div>
                 <div className="text-xs font-mono text-gray-500 uppercase tracking-widest">Personal Project</div>
                 <h3 className="text-2xl font-serif tracking-tight">Offline Vision Assistant</h3>
@@ -239,6 +240,7 @@ export default function Portfolio() {
             <ul className="space-y-3 text-gray-600 font-light text-sm md:text-base">
               <li>LLMs, RAG &amp; Multi-Agent Systems</li>
               <li>LangChain &amp; Azure AI Foundry</li>
+              <li>HuggingFace Transformers</li>
               <li>scikit-learn &amp; XGBoost</li>
               <li>PyTorch &amp; TensorFlow</li>
             </ul>
@@ -311,15 +313,30 @@ export default function Portfolio() {
 
       <footer className="bg-[#111111] text-white pt-20 md:pt-32 pb-16 px-6 md:px-16 mt-16 rounded-t-[2rem] md:rounded-t-[3rem]" id="top">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 mb-16 md:mb-24">
-            <div>
-              <h2 className="text-4xl md:text-7xl font-serif tracking-tighter mb-6">{"Let's build"} <br /> something.</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-16 md:mb-24">
+            <div className="md:col-span-1">
+              <h2 className="text-4xl md:text-6xl font-serif tracking-tighter mb-6">{"Let's build"} <br /> something.</h2>
               <p className="text-gray-400 font-light max-w-sm mb-8 text-sm md:text-base">Currently seeking a 4–6 month End-of-Studies Internship in Paris, starting July 2026.</p>
               <a href="mailto:deepayans77@gmail.com" className="inline-flex items-center gap-2 text-base md:text-lg font-medium border-b border-white pb-1 hover:text-gray-300 hover:border-gray-300 transition-colors">
                 deepayans77@gmail.com ↗
               </a>
             </div>
-            <div className="flex flex-col md:items-end justify-start space-y-4 text-gray-400 font-light">
+            <div className="md:col-span-1 flex flex-col justify-start space-y-4 md:pt-2">
+              <p className="text-xs font-mono text-gray-600 uppercase tracking-widest mb-2">Location</p>
+              <p className="text-gray-400 font-light text-sm">Colombes, Hauts-de-Seine</p>
+              <p className="text-gray-400 font-light text-sm">Paris, France</p>
+              <div className="pt-4">
+                <p className="text-xs font-mono text-gray-600 uppercase tracking-widest mb-3">Availability</p>
+                <div className="inline-flex items-center gap-2 px-3 py-2 border border-green-800 bg-green-950 rounded-full text-xs font-mono text-green-400 uppercase tracking-widest">
+                  <span className="relative flex h-2 w-2 shrink-0">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-40"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                  </span>
+                  July 2026 • Paris
+                </div>
+              </div>
+            </div>
+            <div className="md:col-span-1 flex flex-col md:items-end justify-start space-y-4 text-gray-400 font-light">
               <p className="text-white font-medium mb-2 uppercase tracking-widest text-xs font-mono">Connect</p>
               <a href="https://www.linkedin.com/in/deepayansarkar/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
               <a href="https://github.com/deepayans" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
