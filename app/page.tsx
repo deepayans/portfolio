@@ -9,9 +9,7 @@ export default function Portfolio() {
     <main className="selection:bg-black selection:text-white overflow-hidden bg-[#FAFAFA]">
       <nav className="fixed top-0 w-full bg-[#FAFAFA]/80 backdrop-blur-md z-50 border-b border-gray-100">
         <div className="w-full flex justify-between items-center py-5 px-6 md:py-6 md:px-16 max-w-7xl mx-auto">
-          <div className="font-medium tracking-tight text-sm uppercase">
-            Deepayan Sarkar
-          </div>
+          <div className="font-medium tracking-tight text-sm uppercase">Deepayan Sarkar</div>
           <div className="hidden md:flex gap-6 text-sm text-gray-500">
             <a href="#experience" className="hover:text-black transition-colors">Experience</a>
             <a href="#projects" className="hover:text-black transition-colors">Work</a>
@@ -123,8 +121,8 @@ export default function Portfolio() {
                 &ldquo;Deepayan is a highly capable and analytical problem-solver. What stands out to me is his ability to take high-level guidance and translate it into rigorous research, confidently navigating challenges like label scarcity through solid statistical validation.&rdquo;
               </blockquote>
               <div className="flex items-center gap-4 pt-6 border-t border-gray-100">
-                <div className="w-12 h-12 bg-gray-100 rounded-full overflow-hidden border border-gray-200 shrink-0">
-                  <div className="w-full h-full flex items-center justify-center text-gray-400 font-serif">TZ</div>
+                <div className="w-12 h-12 rounded-full overflow-hidden border border-gray-200 shrink-0">
+                  <Image src="/tianyuan-zhang.png" alt="Tianyuan Zhang" width={48} height={48} className="object-cover w-full h-full" />
                 </div>
                 <div>
                   <p className="font-medium text-black">Tianyuan Zhang</p>
@@ -137,8 +135,8 @@ export default function Portfolio() {
                 &ldquo;Deepayan took ownership of key deliverables easily. He is a smart and driven individual who consistently explores innovative approaches to problem solving and brings his own unique perspective to the team. He is a quick learner, always eager to pick up new technologies.&rdquo;
               </blockquote>
               <div className="flex items-center gap-4 pt-6 border-t border-gray-100">
-                <div className="w-12 h-12 bg-gray-100 rounded-full overflow-hidden border border-gray-200 shrink-0">
-                  <div className="w-full h-full flex items-center justify-center text-gray-400 font-serif">TN</div>
+                <div className="w-12 h-12 rounded-full overflow-hidden border border-gray-200 shrink-0">
+                  <Image src="/taqabul-nisha.png" alt="Taqabul Nisha" width={48} height={48} className="object-cover w-full h-full" />
                 </div>
                 <div>
                   <p className="font-medium text-black">Taqabul Nisha</p>
@@ -277,12 +275,8 @@ export default function Portfolio() {
               <h3 className="text-2xl md:text-3xl font-serif tracking-tight">KEDGE Business School</h3>
               <p className="text-gray-600 font-light">MSc in Data Analytics for Business (Grande École Triple Accredited)</p>
               <div className="flex flex-wrap gap-2 mt-3">
-                <div className="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-md border border-gray-200">
-                  Eligible for Convention de Stage
-                </div>
-                <div className="inline-block px-3 py-1 bg-green-50 text-green-700 text-xs rounded-md border border-green-200">
-                  French Work Authorisation
-                </div>
+                <div className="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-md border border-gray-200">Eligible for Convention de Stage</div>
+                <div className="inline-block px-3 py-1 bg-green-50 text-green-700 text-xs rounded-md border border-green-200">French Work Authorisation</div>
               </div>
             </div>
             <div className="space-y-4 pt-8 border-t border-gray-100">
@@ -320,9 +314,7 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 mb-16 md:mb-24">
             <div>
               <h2 className="text-4xl md:text-7xl font-serif tracking-tighter mb-6">{"Let's build"} <br /> something.</h2>
-              <p className="text-gray-400 font-light max-w-sm mb-8 text-sm md:text-base">
-                Currently seeking a 4–6 month End-of-Studies Internship in Paris, starting July 2026.
-              </p>
+              <p className="text-gray-400 font-light max-w-sm mb-8 text-sm md:text-base">Currently seeking a 4–6 month End-of-Studies Internship in Paris, starting July 2026.</p>
               <a href="mailto:deepayans77@gmail.com" className="inline-flex items-center gap-2 text-base md:text-lg font-medium border-b border-white pb-1 hover:text-gray-300 hover:border-gray-300 transition-colors">
                 deepayans77@gmail.com ↗
               </a>
