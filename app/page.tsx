@@ -4,6 +4,8 @@ import { FadeIn } from '@/components/FadeIn';
 import { MobileNav } from '@/components/MobileNav';
 import { CountUp } from '@/components/CountUp';
 
+const CV_URL = "https://drive.google.com/uc?export=download&id=13GzyJi0YHa3JXNdEQcCSWNWTSUsEV2w2";
+
 export default function Portfolio() {
   return (
     <main className="selection:bg-black selection:text-white overflow-hidden bg-[#FAFAFA]">
@@ -46,7 +48,7 @@ export default function Portfolio() {
               <a href="mailto:deepayans77@gmail.com" className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-white bg-black rounded-full hover:bg-gray-800 transition-all duration-300">
                 {"Let's Talk →"}
               </a>
-              <a href="/Deepayan_Sarkar_General_CV.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-black bg-white border border-gray-200 rounded-full hover:bg-gray-50 transition-all duration-300">
+              <a href={CV_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-black bg-white border border-gray-200 rounded-full hover:bg-gray-50 transition-all duration-300">
                 {"Download CV ↓"}
               </a>
             </div>
@@ -184,7 +186,7 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8">
             <FadeIn delay={0.1}>
               <div className="space-y-5 md:space-y-6">
-                <div className="bg-gray-100 rounded-[2rem] aspect-video overflow-hidden border border-gray-200 relative group">
+                <div className="bg-white rounded-[2rem] aspect-video overflow-hidden border border-gray-200 relative group">
                   <Image src="/data-infra.jpg" alt="Multi-Label Classifier" fill className="object-contain transition-transform duration-700 group-hover:scale-105" />
                 </div>
                 <div className="text-xs font-mono text-purple-600 uppercase tracking-widest">{"L'Oreal Hackathon"}</div>
@@ -202,11 +204,17 @@ export default function Portfolio() {
                     <span className="text-lg font-medium">Minority-class recall</span>
                   </div>
                 </div>
+                <div className="flex flex-wrap gap-2 pt-4">
+                  <span className="px-3 py-1 text-xs border border-gray-300 rounded-full">Python</span>
+                  <span className="px-3 py-1 text-xs border border-gray-300 rounded-full">scikit-learn</span>
+                  <span className="px-3 py-1 text-xs border border-gray-300 rounded-full">TF-IDF</span>
+                  <span className="px-3 py-1 text-xs border border-gray-300 rounded-full">NLP</span>
+                </div>
               </div>
             </FadeIn>
             <FadeIn delay={0.3}>
               <div className="space-y-5 md:space-y-6">
-                <div className="bg-gray-100 rounded-[2rem] aspect-video overflow-hidden border border-gray-200 relative group">
+                <div className="bg-[#0f0f0f] rounded-[2rem] aspect-video overflow-hidden border border-gray-200 relative group">
                   <Image src="/vision-app.jpg" alt="Vision Assistant App" fill className="object-contain transition-transform duration-700 group-hover:scale-105" />
                 </div>
                 <div className="text-xs font-mono text-gray-500 uppercase tracking-widest">Personal Project</div>
@@ -221,8 +229,10 @@ export default function Portfolio() {
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-2 pt-4">
-                  <span className="px-3 py-1 mt-2 text-xs border border-gray-300 rounded-full">TensorFlow Lite</span>
-                  <span className="px-3 py-1 mt-2 text-xs border border-gray-300 rounded-full">Flutter</span>
+                  <span className="px-3 py-1 text-xs border border-gray-300 rounded-full">TensorFlow Lite</span>
+                  <span className="px-3 py-1 text-xs border border-gray-300 rounded-full">Flutter</span>
+                  <span className="px-3 py-1 text-xs border border-gray-300 rounded-full">Dart</span>
+                  <span className="px-3 py-1 text-xs border border-gray-300 rounded-full">On-Device ML</span>
                 </div>
               </div>
             </FadeIn>
@@ -340,7 +350,7 @@ export default function Portfolio() {
               <p className="text-white font-medium mb-2 uppercase tracking-widest text-xs font-mono">Connect</p>
               <a href="https://www.linkedin.com/in/deepayansarkar/" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
               <a href="https://github.com/deepayans" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
-              <a href="/Deepayan_Sarkar_General_CV.pdf" target="_blank" rel="noreferrer" className="hover:text-white transition-colors mt-4 text-white underline underline-offset-4 decoration-gray-600">Download Resum&eacute;</a>
+              <a href={CV_URL} target="_blank" rel="noreferrer" className="hover:text-white transition-colors mt-4 text-white underline underline-offset-4 decoration-gray-600">Download Resum&eacute;</a>
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800 text-xs text-gray-500 font-mono gap-4 md:gap-0">
