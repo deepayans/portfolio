@@ -2,12 +2,14 @@ import Image from 'next/image';
 import { FadeIn } from '@/components/FadeIn';
 import { MobileNav } from '@/components/MobileNav';
 import { CountUp } from '@/components/CountUp';
+import { GridBackground } from '@/components/GridBackground';
 
 const CV_URL = "https://drive.google.com/uc?export=download&id=13GzyJi0YHa3JXNdEQcCSWNWTSUsEV2w2";
 
 export default function Portfolio() {
   return (
-    <main className="selection:bg-black selection:text-white overflow-hidden bg-[#FAFAFA]">
+    <main className="selection:bg-black selection:text-white overflow-hidden bg-[#FAFAFA] relative">
+      <GridBackground />
       <nav className="fixed top-0 w-full bg-[#FAFAFA]/80 backdrop-blur-md z-50 border-b border-gray-100">
         <div className="w-full flex justify-between items-center py-5 px-6 md:py-6 md:px-16 max-w-7xl mx-auto">
           <div className="font-medium tracking-tight text-sm uppercase">Deepayan Sarkar</div>
