@@ -17,6 +17,10 @@ function parseValue(raw: string): { prefix: string; number: number; suffix: stri
   };
 }
 
+function easeOut(t: number): number {
+  return 1 - Math.pow(1 - t, 3);
+}
+
 export const CountUp = ({ value, className = "" }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
@@ -26,22 +30,21 @@ export const CountUp = ({ value, className = "" }: Props) => {
   useEffect(() => {
     if (!isInView) return;
     const duration = 1400;
-    const steps = 60;
-    const increment = number / steps;
-    let current = 0;
-    let step = 0;
+    const startTime = performance.now();
 
-    const timer = setInterval(() => {
-      step++;
-      current = Math.min(current + increment, number);
+    const tick = (now: number) => {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const current = easeOut(progress) * number;
       const formatted = Number.isInteger(number)
         ? Math.round(current).toString()
         : current.toFixed(1);
       setDisplay(formatted);
-      if (step >= steps) clearInterval(timer);
-    }, duration / steps);
+      if (progress < 1) requestAnimationFrame(tick);
+    };
 
-    return () => clearInterval(timer);
+    const raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
   }, [isInView, number]);
 
   return (
