@@ -174,16 +174,16 @@ export default function Portfolio() {
           <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-12 md:mb-16 border-b border-gray-200 pb-4">Applied Projects &amp; Hackathons</h2>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
           {/* BNP Paribas */}
-          <FadeIn delay={0.1}>
-            <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300">
-              <div className="relative h-48 bg-gradient-to-br from-gray-950 via-blue-950 to-gray-900 flex flex-col justify-end p-6">
+          <FadeIn delay={0.1} className="h-full">
+            <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300 flex flex-col h-full">
+              <div className="h-44 bg-[#0f0f0f] flex flex-col justify-end p-6 shrink-0">
                 <div className="text-xs font-mono text-blue-400 uppercase tracking-widest mb-2">BNP Paribas · Hackathon Winner</div>
                 <div className="text-white font-light text-sm opacity-60">Multi-agent · GPT-4o · Azure AI</div>
               </div>
-              <div className="p-6 space-y-4">
+              <div className="p-6 flex flex-col flex-1 gap-4">
                 <h3 className="text-xl font-serif tracking-tight">AI Persona Bots</h3>
                 <p className="text-gray-500 font-light text-sm leading-relaxed">
                   Multi-agent platform synthesising 2,438 synthetic customer responses across 8 segments for credit product marketing research.
@@ -202,7 +202,7 @@ export default function Portfolio() {
                     <div className="text-xs text-gray-400 uppercase tracking-wider mt-1">vs 4–8wks</div>
                   </div>
                 </div>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mt-auto">
                   <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">Azure AI Foundry</span>
                   <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">LangChain</span>
                   <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">GPT-4o</span>
@@ -212,13 +212,13 @@ export default function Portfolio() {
           </FadeIn>
 
           {/* L'Oréal */}
-          <FadeIn delay={0.2}>
-            <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300">
-              <div className="relative h-48 bg-gradient-to-br from-purple-950 via-indigo-900 to-purple-950 flex flex-col justify-end p-6">
+          <FadeIn delay={0.2} className="h-full">
+            <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300 flex flex-col h-full">
+              <div className="h-44 bg-[#0f0f0f] flex flex-col justify-end p-6 shrink-0">
                 <div className="text-xs font-mono text-purple-300 uppercase tracking-widest mb-2">{"L'Oréal Hackathon · KEDGE"}</div>
                 <div className="text-white font-light text-sm opacity-60">NLP · Multi-Label · TF-IDF</div>
               </div>
-              <div className="p-6 space-y-4">
+              <div className="p-6 flex flex-col flex-1 gap-4">
                 <h3 className="text-xl font-serif tracking-tight">Skincare Product Classifier</h3>
                 <p className="text-gray-500 font-light text-sm leading-relaxed">
                   Multi-label text classifier using LinearSVC and One-vs-Rest across 33 beauty categories, with per-class threshold optimisation for minority-class recall.
@@ -243,18 +243,21 @@ export default function Portfolio() {
                   <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">TF-IDF</span>
                   <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">NLP</span>
                 </div>
+                <a href="https://github.com/deepayans/Multi-Label-Classification-for-Skincare-Products" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-black transition-colors mt-auto">
+                  View on GitHub ↗
+                </a>
               </div>
             </div>
           </FadeIn>
 
           {/* Vision Assistant */}
-          <FadeIn delay={0.3}>
-            <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300">
-              <div className="relative h-48 bg-gradient-to-br from-gray-950 via-emerald-950 to-gray-900 flex flex-col justify-end p-6">
+          <FadeIn delay={0.3} className="h-full">
+            <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300 flex flex-col h-full">
+              <div className="h-44 bg-[#0f0f0f] flex flex-col justify-end p-6 shrink-0">
                 <div className="text-xs font-mono text-emerald-400 uppercase tracking-widest mb-2">Personal Project · Android</div>
                 <div className="text-white font-light text-sm opacity-60">Flutter · TFLite · On-Device ML</div>
               </div>
-              <div className="p-6 space-y-4">
+              <div className="p-6 flex flex-col flex-1 gap-4">
                 <h3 className="text-xl font-serif tracking-tight">Offline Vision Assistant</h3>
                 <p className="text-gray-500 font-light text-sm leading-relaxed">
                   Fully offline Android app for the visually impaired — on-device object detection, voice feedback, and CI/CD pipeline via GitHub Actions.
@@ -275,18 +278,21 @@ export default function Portfolio() {
                   <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">Dart</span>
                   <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">On-Device ML</span>
                 </div>
+                <a href="https://github.com/deepayans/SLM-APK-Blind-App" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-black transition-colors mt-auto">
+                  View on GitHub ↗
+                </a>
               </div>
             </div>
           </FadeIn>
 
           {/* Tableau */}
-          <FadeIn delay={0.4}>
-            <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300">
-              <div className="relative h-48 bg-gradient-to-br from-blue-950 via-cyan-950 to-blue-900 flex flex-col justify-end p-6">
+          <FadeIn delay={0.4} className="h-full">
+            <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300 flex flex-col h-full">
+              <div className="h-44 bg-[#0f0f0f] flex flex-col justify-end p-6 shrink-0">
                 <div className="text-xs font-mono text-cyan-300 uppercase tracking-widest mb-2">Tableau Public · Data Viz</div>
                 <div className="text-white font-light text-sm opacity-60">LOD Expressions · Trade Analysis</div>
               </div>
-              <div className="p-6 space-y-4">
+              <div className="p-6 flex flex-col flex-1 gap-4">
                 <h3 className="text-xl font-serif tracking-tight">China Trade Transport Analysis</h3>
                 <p className="text-gray-500 font-light text-sm leading-relaxed">
                   Interactive dashboard exploring China&apos;s import/export transport patterns — shipping modes, commodity flows, and YoY growth across global corridors.
@@ -306,7 +312,7 @@ export default function Portfolio() {
                   <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">LOD Expressions</span>
                   <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">Data Viz</span>
                 </div>
-                <a href="https://public.tableau.com/app/profile/deepayan.sarkar8273/viz/TransportAnalysisDashboardofChinasImportExport/TransportAnalysisDashboard" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-black transition-colors">
+                <a href="https://public.tableau.com/app/profile/deepayan.sarkar8273/viz/TransportAnalysisDashboardofChinasImportExport/TransportAnalysisDashboard" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-black transition-colors mt-auto">
                   View on Tableau Public ↗
                 </a>
               </div>
