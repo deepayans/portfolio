@@ -182,11 +182,12 @@ export default function Portfolio() {
             </FadeIn>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8">
             <FadeIn delay={0.1}>
               <div className="space-y-5 md:space-y-6">
-                <div className="bg-white rounded-[2rem] aspect-video overflow-hidden border border-gray-200 relative group">
-                  <Image src="/data-infra.jpg" alt="Multi-Label Classifier" fill className="object-contain transition-transform duration-700 group-hover:scale-105" />
+                <div className="bg-[#0f0f0f] rounded-[2rem] aspect-video overflow-hidden border border-gray-800 relative group">
+                  <Image src="/data-infra.jpg" alt="Multi-Label Classifier" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-black/30" />
                 </div>
                 <div className="text-xs font-mono text-purple-600 uppercase tracking-widest">{"L'Oreal Hackathon"}</div>
                 <h3 className="text-2xl font-serif tracking-tight">Skincare Product Classifier</h3>
@@ -214,8 +215,9 @@ export default function Portfolio() {
 
             <FadeIn delay={0.3}>
               <div className="space-y-5 md:space-y-6">
-                <div className="bg-[#0f0f0f] rounded-[2rem] aspect-video overflow-hidden border border-gray-200 relative group">
-                  <Image src="/vision-app.jpg" alt="Vision Assistant App" fill className="object-contain transition-transform duration-700 group-hover:scale-105" />
+                <div className="bg-[#0f0f0f] rounded-[2rem] aspect-video overflow-hidden border border-gray-800 relative group">
+                  <Image src="/vision-app.jpg" alt="Vision Assistant App" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-black/30" />
                 </div>
                 <div className="text-xs font-mono text-gray-500 uppercase tracking-widest">Personal Project</div>
                 <h3 className="text-2xl font-serif tracking-tight">Offline Vision Assistant</h3>
@@ -239,9 +241,9 @@ export default function Portfolio() {
 
             <FadeIn delay={0.4}>
               <div className="space-y-5 md:space-y-6">
-                <div className="bg-[#0d1117] rounded-[2rem] aspect-video overflow-hidden border border-gray-200 relative group">
+                <div className="bg-[#0d1117] rounded-[2rem] aspect-video overflow-hidden border border-gray-800 relative group">
                   <Image src="/tableau-dashboard.jpg" alt="China Trade Transport Analysis Dashboard" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-black/40" />
+                  <div className="absolute inset-0 bg-black/50" />
                 </div>
                 <div className="text-xs font-mono text-orange-500 uppercase tracking-widest">Tableau Public</div>
                 <h3 className="text-2xl font-serif tracking-tight">China Trade Transport Analysis</h3>
