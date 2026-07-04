@@ -149,7 +149,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="projects" className="py-16 md:py-32 px-6 md:px-16 max-w-7xl mx-auto">
+      <section id="projects" className="py-16 md:py-24 px-6 md:px-16 max-w-7xl mx-auto">
         <FadeIn>
           <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-12 md:mb-16 border-b border-gray-200 pb-4">Applied Projects &amp; Hackathons</h2>
         </FadeIn>
@@ -279,7 +279,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="stack" className="py-16 md:py-32 px-6 md:px-16 max-w-7xl mx-auto bg-white border-t border-gray-100">
+      <section id="stack" className="py-16 md:py-20 px-6 md:px-16 max-w-7xl mx-auto bg-white border-t border-gray-100">
         <FadeIn>
           <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-12 md:mb-16 border-b border-gray-200 pb-4">Technical Specifications</h2>
         </FadeIn>
