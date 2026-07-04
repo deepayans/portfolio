@@ -28,12 +28,12 @@ export default function Portfolio() {
           {/* Left: Text */}
           <div className="space-y-6 md:space-y-8 order-2 md:order-1">
             <FadeIn delay={0.1}>
-              <div className="inline-flex items-center gap-2 px-3 py-2 border border-green-200 bg-green-50 rounded-full text-xs font-mono text-green-800 uppercase tracking-widest flex-wrap">
-                <span className="relative flex h-2 w-2 shrink-0">
+              <div className="inline-flex items-start gap-2 px-3 py-2 border border-green-200 bg-green-50 rounded-2xl text-xs font-mono text-green-800 uppercase tracking-widest">
+                <span className="relative flex h-2 w-2 shrink-0 mt-0.5">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-40"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-green-600"></span>
                 </span>
-                Available Now • Stage de fin d'études • Paris, France
+                <span>Available Now • Stage de fin d'études • Paris, France</span>
               </div>
             </FadeIn>
             <FadeIn delay={0.2}>
