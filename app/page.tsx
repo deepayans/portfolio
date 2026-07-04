@@ -34,7 +34,7 @@ export default function Portfolio() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-40"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-green-600"></span>
                 </span>
-                Available Now • 4–6 Months Internship • Paris, France
+                Available Now • Stage de fin d'études • Paris, France
               </div>
             </FadeIn>
             <FadeIn delay={0.2}>
