@@ -3,6 +3,7 @@ import { FadeIn } from '@/components/FadeIn';
 import { MobileNav } from '@/components/MobileNav';
 import { CountUp } from '@/components/CountUp';
 import { GridBackground } from '@/components/GridBackground';
+import { Brain, Link2, Smile, GitBranch, Layers, Cloud, GitMerge, Box, Settings2, Code2, BarChart2, Activity, Search } from 'lucide-react';
 
 const CV_URL = "https://drive.google.com/uc?export=download&id=13GzyJi0YHa3JXNdEQcCSWNWTSUsEV2w2";
 
@@ -22,10 +23,8 @@ export default function Portfolio() {
           <MobileNav />
         </div>
       </nav>
-
       <section className="min-h-screen px-6 md:px-16 max-w-7xl mx-auto pt-20 flex items-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center w-full">
-
           {/* Left: Text */}
           <div className="space-y-6 md:space-y-8 order-2 md:order-1">
             <FadeIn delay={0.1}>
@@ -58,7 +57,6 @@ export default function Portfolio() {
               </div>
             </FadeIn>
           </div>
-
           {/* Right: Photo */}
           <FadeIn delay={0.3} className="order-1 md:order-2 flex justify-center md:justify-end">
             <div className="relative w-72 h-72 md:w-[420px] md:h-[420px] rounded-3xl overflow-hidden border border-gray-200 shadow-sm">
@@ -71,10 +69,8 @@ export default function Portfolio() {
               />
             </div>
           </FadeIn>
-
         </div>
       </section>
-
       <section id="experience" className="py-16 md:py-32 px-6 md:px-16 max-w-7xl mx-auto border-t border-gray-100">
         <FadeIn>
           <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-12 md:mb-16 border-b border-gray-200 pb-4">Enterprise Engineering</h2>
@@ -130,7 +126,6 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
       <section className="py-16 md:py-32 px-6 md:px-16 border-y border-gray-100 bg-white">
         <div className="max-w-7xl mx-auto">
           <FadeIn>
@@ -168,14 +163,11 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
       <section id="projects" className="py-16 md:py-24 px-6 md:px-16 max-w-7xl mx-auto">
         <FadeIn>
           <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-12 md:mb-16 border-b border-gray-200 pb-4">Applied Projects &amp; Hackathons</h2>
         </FadeIn>
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
           {/* BNP Paribas */}
           <FadeIn delay={0.1} className="h-full">
             <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300 flex flex-col h-full">
@@ -209,7 +201,6 @@ export default function Portfolio() {
               </div>
             </div>
           </FadeIn>
-
           {/* L'Oréal */}
           <FadeIn delay={0.2} className="h-full">
             <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300 flex flex-col h-full">
@@ -247,7 +238,6 @@ export default function Portfolio() {
               </div>
             </div>
           </FadeIn>
-
           {/* Vision Assistant */}
           <FadeIn delay={0.3} className="h-full">
             <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300 flex flex-col h-full">
@@ -281,7 +271,6 @@ export default function Portfolio() {
               </div>
             </div>
           </FadeIn>
-
           {/* Tableau */}
           <FadeIn delay={0.4} className="h-full">
             <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300 flex flex-col h-full">
@@ -314,10 +303,8 @@ export default function Portfolio() {
               </div>
             </div>
           </FadeIn>
-
         </div>
       </section>
-
       <section id="stack" className="py-16 md:py-20 px-6 md:px-16 max-w-7xl mx-auto bg-white border-t border-gray-100">
         <FadeIn>
           <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-12 md:mb-16 border-b border-gray-200 pb-4">Technical Specifications</h2>
@@ -325,35 +312,55 @@ export default function Portfolio() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
           <FadeIn delay={0.1} className="space-y-5 md:space-y-6">
             <h4 className="font-serif text-xl md:text-2xl border-l-2 border-black pl-4">GenAI &amp; Machine Learning</h4>
-            <ul className="space-y-3 text-gray-600 font-light text-sm md:text-base">
-              <li>LLMs, RAG &amp; Multi-Agent Systems</li>
-              <li>LangChain &amp; Azure AI Foundry</li>
-              <li>HuggingFace Transformers</li>
-              <li>scikit-learn &amp; XGBoost</li>
-              <li>PyTorch &amp; TensorFlow</li>
+            <ul className="space-y-3">
+              {([
+                { label: "LLMs, RAG & Multi-Agent Systems", Icon: Brain },
+                { label: "LangChain & Azure AI Foundry",    Icon: Link2 },
+                { label: "HuggingFace Transformers",        Icon: Smile },
+                { label: "scikit-learn & XGBoost",          Icon: GitBranch },
+                { label: "PyTorch & TensorFlow",            Icon: Layers },
+              ] as const).map(({ label, Icon }) => (
+                <li key={label} className="flex items-center gap-2.5 text-gray-600 font-light text-sm md:text-base">
+                  <Icon className="w-4 h-4 shrink-0 text-gray-400" />
+                  {label}
+                </li>
+              ))}
             </ul>
           </FadeIn>
           <FadeIn delay={0.2} className="space-y-5 md:space-y-6">
             <h4 className="font-serif text-xl md:text-2xl border-l-2 border-black pl-4">Cloud &amp; Data Engineering</h4>
-            <ul className="space-y-3 text-gray-600 font-light text-sm md:text-base">
-              <li>GCP (BigQuery, Dataflow, Cloud Storage)</li>
-              <li>Airflow &amp; ETL Pipelines</li>
-              <li>Docker &amp; CI/CD</li>
-              <li>MLOps Architecture</li>
+            <ul className="space-y-3">
+              {([
+                { label: "GCP (BigQuery, Dataflow, Cloud Storage)", Icon: Cloud },
+                { label: "Airflow & ETL Pipelines",                 Icon: GitMerge },
+                { label: "Docker & CI/CD",                          Icon: Box },
+                { label: "MLOps Architecture",                      Icon: Settings2 },
+              ] as const).map(({ label, Icon }) => (
+                <li key={label} className="flex items-center gap-2.5 text-gray-600 font-light text-sm md:text-base">
+                  <Icon className="w-4 h-4 shrink-0 text-gray-400" />
+                  {label}
+                </li>
+              ))}
             </ul>
           </FadeIn>
           <FadeIn delay={0.3} className="space-y-5 md:space-y-6">
             <h4 className="font-serif text-xl md:text-2xl border-l-2 border-black pl-4">Analytics &amp; Programming</h4>
-            <ul className="space-y-3 text-gray-600 font-light text-sm md:text-base">
-              <li>Python, SQL &amp; Apache Spark</li>
-              <li>Power BI &amp; Tableau</li>
-              <li>A/B Testing &amp; Statistical Modelling</li>
-              <li>Exploratory Data Analysis</li>
+            <ul className="space-y-3">
+              {([
+                { label: "Python, SQL & Apache Spark",          Icon: Code2 },
+                { label: "Power BI & Tableau",                  Icon: BarChart2 },
+                { label: "A/B Testing & Statistical Modelling", Icon: Activity },
+                { label: "Exploratory Data Analysis",           Icon: Search },
+              ] as const).map(({ label, Icon }) => (
+                <li key={label} className="flex items-center gap-2.5 text-gray-600 font-light text-sm md:text-base">
+                  <Icon className="w-4 h-4 shrink-0 text-gray-400" />
+                  {label}
+                </li>
+              ))}
             </ul>
           </FadeIn>
         </div>
       </section>
-
       <section id="education" className="py-16 md:py-32 px-6 md:px-16 max-w-7xl mx-auto border-t border-gray-100">
         <FadeIn>
           <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-12 md:mb-16 border-b border-gray-200 pb-4">Academic &amp; Credentials</h2>
@@ -398,7 +405,6 @@ export default function Portfolio() {
           </FadeIn>
         </div>
       </section>
-
       <footer className="bg-[#111111] text-white pt-20 md:pt-32 pb-16 px-6 md:px-16 mt-16 rounded-t-[2rem] md:rounded-t-[3rem]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-16 md:mb-24">
