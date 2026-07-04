@@ -174,129 +174,142 @@ export default function Portfolio() {
           <h2 className="text-sm font-mono text-gray-400 uppercase tracking-widest mb-12 md:mb-16 border-b border-gray-200 pb-4">Applied Projects &amp; Hackathons</h2>
         </FadeIn>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-6">
 
           {/* BNP Paribas */}
           <FadeIn delay={0.1}>
-            <div className="group space-y-5">
-              <div className="bg-[#0f0f0f] rounded-2xl aspect-video overflow-hidden border border-gray-800 relative">
-                <Image src="/azure-architecture.jpg" alt="AI Persona Bots" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-black/30" />
+            <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300">
+              <div className="relative h-48 bg-gradient-to-br from-gray-950 via-blue-950 to-gray-900 flex flex-col justify-end p-6">
+                <div className="text-xs font-mono text-blue-400 uppercase tracking-widest mb-2">BNP Paribas · Hackathon Winner</div>
+                <div className="text-white font-light text-sm opacity-60">Multi-agent · GPT-4o · Azure AI</div>
               </div>
-              <div className="text-xs font-mono text-blue-500 uppercase tracking-widest">BNP Paribas Hackathon Winner</div>
-              <h3 className="text-2xl font-serif tracking-tight">AI Persona Bots</h3>
-              <p className="text-gray-600 font-light text-sm leading-relaxed">
-                Built a multi-agent analytics platform synthesising 2,438 synthetic customer responses across 8 consumer segments for marketing research.
-              </p>
-              <div className="flex gap-8 pt-3 border-t border-gray-100">
-                <div>
-                  <CountUp value="97.8%" className="text-2xl font-light tracking-tighter text-black" />
-                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">Coherence</div>
+              <div className="p-6 space-y-4">
+                <h3 className="text-xl font-serif tracking-tight">AI Persona Bots</h3>
+                <p className="text-gray-500 font-light text-sm leading-relaxed">
+                  Multi-agent platform synthesising 2,438 synthetic customer responses across 8 segments for credit product marketing research.
+                </p>
+                <div className="flex gap-6 py-4 border-y border-gray-100">
+                  <div>
+                    <CountUp value="97.8%" className="text-2xl font-light tracking-tighter text-black" />
+                    <div className="text-xs text-gray-400 uppercase tracking-wider mt-1">Coherence</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-light tracking-tighter text-black">88.6%</div>
+                    <div className="text-xs text-gray-400 uppercase tracking-wider mt-1">Relevance</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-light tracking-tighter text-black">&lt;1hr</div>
+                    <div className="text-xs text-gray-400 uppercase tracking-wider mt-1">vs 4–8wks</div>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-2xl font-light tracking-tighter text-black">LLM-Judge</div>
-                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">Evaluation</div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">Azure AI Foundry</span>
+                  <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">LangChain</span>
+                  <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">GPT-4o</span>
                 </div>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">Azure AI Foundry</span>
-                <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">LangChain</span>
-                <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">GPT-4o</span>
               </div>
             </div>
           </FadeIn>
 
           {/* L'Oréal */}
           <FadeIn delay={0.2}>
-            <div className="group space-y-5">
-              <div className="bg-[#0f0f0f] rounded-2xl aspect-video overflow-hidden border border-gray-800 relative">
-                <Image src="/data-infra.jpg" alt="Skincare Product Classifier" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-black/35" />
+            <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300">
+              <div className="relative h-48 bg-gradient-to-br from-purple-950 via-indigo-900 to-purple-950 flex flex-col justify-end p-6">
+                <div className="text-xs font-mono text-purple-300 uppercase tracking-widest mb-2">{"L'Oréal Hackathon · KEDGE"}</div>
+                <div className="text-white font-light text-sm opacity-60">NLP · Multi-Label · TF-IDF</div>
               </div>
-              <div className="text-xs font-mono text-purple-500 uppercase tracking-widest">{"L'Oréal Hackathon"}</div>
-              <h3 className="text-2xl font-serif tracking-tight">Skincare Product Classifier</h3>
-              <p className="text-gray-600 font-light text-sm leading-relaxed">
-                Engineered an NLP multi-label classifier across 33 beauty product categories with per-class threshold optimisation.
-              </p>
-              <div className="flex gap-8 pt-3 border-t border-gray-100">
-                <div>
-                  <div className="text-2xl font-light tracking-tighter text-green-600">~18%</div>
-                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">Metric Lift</div>
+              <div className="p-6 space-y-4">
+                <h3 className="text-xl font-serif tracking-tight">Skincare Product Classifier</h3>
+                <p className="text-gray-500 font-light text-sm leading-relaxed">
+                  Multi-label text classifier using LinearSVC and One-vs-Rest across 33 beauty categories, with per-class threshold optimisation for minority-class recall.
+                </p>
+                <div className="flex gap-6 py-4 border-y border-gray-100">
+                  <div>
+                    <div className="text-2xl font-light tracking-tighter text-black">0.67</div>
+                    <div className="text-xs text-gray-400 uppercase tracking-wider mt-1">F1 Score</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-light tracking-tighter text-black">6,240</div>
+                    <div className="text-xs text-gray-400 uppercase tracking-wider mt-1">Products</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-light tracking-tighter text-green-600">~18%</div>
+                    <div className="text-xs text-gray-400 uppercase tracking-wider mt-1">Metric Lift</div>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-2xl font-light tracking-tighter text-black">33 cats</div>
-                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">Categories</div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">Python</span>
+                  <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">scikit-learn</span>
+                  <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">TF-IDF</span>
+                  <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">NLP</span>
                 </div>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">Python</span>
-                <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">scikit-learn</span>
-                <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">TF-IDF</span>
-                <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">NLP</span>
               </div>
             </div>
           </FadeIn>
 
           {/* Vision Assistant */}
           <FadeIn delay={0.3}>
-            <div className="group space-y-5">
-              <div className="bg-[#0f0f0f] rounded-2xl aspect-video overflow-hidden border border-gray-800 relative">
-                <Image src="/vision-app.jpg" alt="Offline Vision Assistant" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-black/30" />
+            <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300">
+              <div className="relative h-48 bg-gradient-to-br from-gray-950 via-emerald-950 to-gray-900 flex flex-col justify-end p-6">
+                <div className="text-xs font-mono text-emerald-400 uppercase tracking-widest mb-2">Personal Project · Android</div>
+                <div className="text-white font-light text-sm opacity-60">Flutter · TFLite · On-Device ML</div>
               </div>
-              <div className="text-xs font-mono text-gray-400 uppercase tracking-widest">Personal Project</div>
-              <h3 className="text-2xl font-serif tracking-tight">Offline Vision Assistant</h3>
-              <p className="text-gray-600 font-light text-sm leading-relaxed">
-                Shipped an end-to-end on-device ML app for the visually impaired — fully offline, real-time inference, voice-driven.
-              </p>
-              <div className="flex gap-8 pt-3 border-t border-gray-100">
-                <div>
-                  <div className="text-2xl font-light tracking-tighter text-green-600">&lt;200ms</div>
-                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">Inference</div>
+              <div className="p-6 space-y-4">
+                <h3 className="text-xl font-serif tracking-tight">Offline Vision Assistant</h3>
+                <p className="text-gray-500 font-light text-sm leading-relaxed">
+                  Fully offline Android app for the visually impaired — on-device object detection, voice feedback, and CI/CD pipeline via GitHub Actions.
+                </p>
+                <div className="flex gap-6 py-4 border-y border-gray-100">
+                  <div>
+                    <div className="text-2xl font-light tracking-tighter text-green-600">&lt;200ms</div>
+                    <div className="text-xs text-gray-400 uppercase tracking-wider mt-1">Inference</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-light tracking-tighter text-black">100%</div>
+                    <div className="text-xs text-gray-400 uppercase tracking-wider mt-1">Offline</div>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-2xl font-light tracking-tighter text-black">100%</div>
-                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">Offline</div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">TensorFlow Lite</span>
+                  <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">Flutter</span>
+                  <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">Dart</span>
+                  <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">On-Device ML</span>
                 </div>
-              </div>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">TensorFlow Lite</span>
-                <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">Flutter</span>
-                <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">On-Device ML</span>
               </div>
             </div>
           </FadeIn>
 
           {/* Tableau */}
           <FadeIn delay={0.4}>
-            <div className="group space-y-5">
-              <div className="bg-[#0d1117] rounded-2xl aspect-video overflow-hidden border border-gray-800 relative">
-                <Image src="/tableau-dashboard.jpg" alt="China Trade Transport Analysis" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
-                <div className="absolute inset-0 bg-black/50" />
+            <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300">
+              <div className="relative h-48 bg-gradient-to-br from-blue-950 via-cyan-950 to-blue-900 flex flex-col justify-end p-6">
+                <div className="text-xs font-mono text-cyan-300 uppercase tracking-widest mb-2">Tableau Public · Data Viz</div>
+                <div className="text-white font-light text-sm opacity-60">LOD Expressions · Trade Analysis</div>
               </div>
-              <div className="text-xs font-mono text-orange-400 uppercase tracking-widest">Tableau Public</div>
-              <h3 className="text-2xl font-serif tracking-tight">China Trade Transport Analysis</h3>
-              <p className="text-gray-600 font-light text-sm leading-relaxed">
-                Interactive dashboard exploring China&apos;s import/export transport patterns — shipping modes, commodity flows, and YoY trends.
-              </p>
-              <div className="flex gap-8 pt-3 border-t border-gray-100">
-                <div>
-                  <div className="text-2xl font-light tracking-tighter text-black">4</div>
-                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">Transport Modes</div>
+              <div className="p-6 space-y-4">
+                <h3 className="text-xl font-serif tracking-tight">China Trade Transport Analysis</h3>
+                <p className="text-gray-500 font-light text-sm leading-relaxed">
+                  Interactive dashboard exploring China&apos;s import/export transport patterns — shipping modes, commodity flows, and YoY growth across global corridors.
+                </p>
+                <div className="flex gap-6 py-4 border-y border-gray-100">
+                  <div>
+                    <div className="text-2xl font-light tracking-tighter text-black">4</div>
+                    <div className="text-xs text-gray-400 uppercase tracking-wider mt-1">Transport Modes</div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-light tracking-tighter text-green-600">YoY</div>
+                    <div className="text-xs text-gray-400 uppercase tracking-wider mt-1">Growth Analysis</div>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-2xl font-light tracking-tighter text-green-600">YoY</div>
-                  <div className="text-xs text-gray-500 uppercase tracking-wider mt-1">Growth Analysis</div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">Tableau</span>
+                  <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">LOD Expressions</span>
+                  <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">Data Viz</span>
                 </div>
+                <a href="https://public.tableau.com/app/profile/deepayan.sarkar8273/viz/TransportAnalysisDashboardofChinasImportExport/TransportAnalysisDashboard" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-black transition-colors">
+                  View on Tableau Public ↗
+                </a>
               </div>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">Tableau</span>
-                <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">LOD Expressions</span>
-                <span className="px-3 py-1 text-xs border border-gray-200 rounded-full">Data Viz</span>
-              </div>
-              <a href="https://public.tableau.com/app/profile/deepayan.sarkar8273/viz/TransportAnalysisDashboardofChinasImportExport/TransportAnalysisDashboard" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-black transition-colors">
-                View on Tableau Public ↗
-              </a>
             </div>
           </FadeIn>
 
