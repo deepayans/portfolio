@@ -180,11 +180,10 @@ export default function Portfolio() {
           <FadeIn delay={0.1} className="h-full">
             <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300 flex flex-col h-full">
               <div className="h-44 bg-[#0f0f0f] flex flex-col justify-end p-6 shrink-0">
-                <div className="text-sm font-serif text-gray-400 mb-2">BNP Paribas · Hackathon Winner</div>
-                <div className="text-white font-light text-sm opacity-60">Multi-agent · GPT-4o · Azure AI</div>
+                <div className="text-xs font-mono text-gray-500 uppercase tracking-widest mb-3">BNP Paribas · Hackathon Winner</div>
+                <h3 className="text-2xl font-serif text-white tracking-tight leading-snug">AI Persona Bots</h3>
               </div>
               <div className="p-6 flex flex-col flex-1 gap-4">
-                <h3 className="text-xl font-serif tracking-tight">AI Persona Bots</h3>
                 <p className="text-gray-500 font-light text-sm leading-relaxed">
                   Multi-agent platform synthesising 2,438 synthetic customer responses across 8 segments for credit product marketing research.
                 </p>
@@ -215,11 +214,10 @@ export default function Portfolio() {
           <FadeIn delay={0.2} className="h-full">
             <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300 flex flex-col h-full">
               <div className="h-44 bg-[#0f0f0f] flex flex-col justify-end p-6 shrink-0">
-                <div className="text-sm font-serif text-gray-400 mb-2">{"L'Oréal Hackathon · KEDGE"}</div>
-                <div className="text-white font-light text-sm opacity-60">NLP · Multi-Label · TF-IDF</div>
+                <div className="text-xs font-mono text-gray-500 uppercase tracking-widest mb-3">{"L'Oréal Hackathon · KEDGE"}</div>
+                <h3 className="text-2xl font-serif text-white tracking-tight leading-snug">Skincare Product Classifier</h3>
               </div>
               <div className="p-6 flex flex-col flex-1 gap-4">
-                <h3 className="text-xl font-serif tracking-tight">Skincare Product Classifier</h3>
                 <p className="text-gray-500 font-light text-sm leading-relaxed">
                   Multi-label text classifier using LinearSVC and One-vs-Rest across 33 beauty categories, with per-class threshold optimisation for minority-class recall.
                 </p>
@@ -254,11 +252,10 @@ export default function Portfolio() {
           <FadeIn delay={0.3} className="h-full">
             <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300 flex flex-col h-full">
               <div className="h-44 bg-[#0f0f0f] flex flex-col justify-end p-6 shrink-0">
-                <div className="text-sm font-serif text-gray-400 mb-2">Personal Project · Android</div>
-                <div className="text-white font-light text-sm opacity-60">Flutter · TFLite · On-Device ML</div>
+                <div className="text-xs font-mono text-gray-500 uppercase tracking-widest mb-3">Personal Project · Android</div>
+                <h3 className="text-2xl font-serif text-white tracking-tight leading-snug">Offline Vision Assistant</h3>
               </div>
               <div className="p-6 flex flex-col flex-1 gap-4">
-                <h3 className="text-xl font-serif tracking-tight">Offline Vision Assistant</h3>
                 <p className="text-gray-500 font-light text-sm leading-relaxed">
                   Fully offline Android app for the visually impaired — on-device object detection, voice feedback, and CI/CD pipeline via GitHub Actions.
                 </p>
@@ -289,11 +286,10 @@ export default function Portfolio() {
           <FadeIn delay={0.4} className="h-full">
             <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300 flex flex-col h-full">
               <div className="h-44 bg-[#0f0f0f] flex flex-col justify-end p-6 shrink-0">
-                <div className="text-sm font-serif text-gray-400 mb-2">Tableau Public · Data Viz</div>
-                <div className="text-white font-light text-sm opacity-60">LOD Expressions · Trade Analysis</div>
+                <div className="text-xs font-mono text-gray-500 uppercase tracking-widest mb-3">Tableau Public · Data Viz</div>
+                <h3 className="text-2xl font-serif text-white tracking-tight leading-snug">China Trade Transport Analysis</h3>
               </div>
               <div className="p-6 flex flex-col flex-1 gap-4">
-                <h3 className="text-xl font-serif tracking-tight">China Trade Transport Analysis</h3>
                 <p className="text-gray-500 font-light text-sm leading-relaxed">
                   Interactive dashboard exploring China&apos;s import/export transport patterns — shipping modes, commodity flows, and YoY growth across global corridors.
                 </p>
