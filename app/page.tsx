@@ -239,10 +239,9 @@ export default function Portfolio() {
 
             <FadeIn delay={0.4}>
               <div className="space-y-5 md:space-y-6">
-                <div className="bg-[#f8f4ff] rounded-[2rem] aspect-video overflow-hidden border border-gray-200 relative group flex items-center justify-center">
-                  <svg className="w-16 h-16 text-[#E97627] opacity-80" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M11.5 2C6.81 2 3 5.81 3 10.5S6.81 19 11.5 19h.5v3c4.86-2.34 8-7 8-11.5C20 5.81 16.19 2 11.5 2zm1 14.5h-2v-2h2v2zm0-4h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2h-2c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z"/>
-                  </svg>
+                <div className="bg-[#0d1117] rounded-[2rem] aspect-video overflow-hidden border border-gray-200 relative group">
+                  <Image src="/tableau-dashboard.jpg" alt="China Trade Transport Analysis Dashboard" fill className="object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-black/40" />
                 </div>
                 <div className="text-xs font-mono text-orange-500 uppercase tracking-widest">Tableau Public</div>
                 <h3 className="text-2xl font-serif tracking-tight">China Trade Transport Analysis</h3>
