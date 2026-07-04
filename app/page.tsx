@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import { FadeIn } from '@/components/FadeIn';
 import { MobileNav } from '@/components/MobileNav';
@@ -30,7 +29,7 @@ export default function Portfolio() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-40"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-600"></span>
               </span>
-              Available July 2026 • 4–6 Months Internship • Paris, France
+              Available Now • 4–6 Months Internship • Paris, France
             </div>
           </FadeIn>
           <FadeIn delay={0.2}>
@@ -183,7 +182,7 @@ export default function Portfolio() {
             </FadeIn>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-8">
             <FadeIn delay={0.1}>
               <div className="space-y-5 md:space-y-6">
                 <div className="bg-white rounded-[2rem] aspect-video overflow-hidden border border-gray-200 relative group">
@@ -212,6 +211,7 @@ export default function Portfolio() {
                 </div>
               </div>
             </FadeIn>
+
             <FadeIn delay={0.3}>
               <div className="space-y-5 md:space-y-6">
                 <div className="bg-[#0f0f0f] rounded-[2rem] aspect-video overflow-hidden border border-gray-200 relative group">
@@ -234,6 +234,44 @@ export default function Portfolio() {
                   <span className="px-3 py-1 text-xs border border-gray-300 rounded-full">Dart</span>
                   <span className="px-3 py-1 text-xs border border-gray-300 rounded-full">On-Device ML</span>
                 </div>
+              </div>
+            </FadeIn>
+
+            <FadeIn delay={0.4}>
+              <div className="space-y-5 md:space-y-6">
+                <div className="bg-[#f8f4ff] rounded-[2rem] aspect-video overflow-hidden border border-gray-200 relative group flex items-center justify-center">
+                  <svg className="w-16 h-16 text-[#E97627] opacity-80" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.5 2C6.81 2 3 5.81 3 10.5S6.81 19 11.5 19h.5v3c4.86-2.34 8-7 8-11.5C20 5.81 16.19 2 11.5 2zm1 14.5h-2v-2h2v2zm0-4h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2h-2c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z"/>
+                  </svg>
+                </div>
+                <div className="text-xs font-mono text-orange-500 uppercase tracking-widest">Tableau Public</div>
+                <h3 className="text-2xl font-serif tracking-tight">China Trade Transport Analysis</h3>
+                <p className="text-gray-600 font-light text-sm leading-relaxed mb-4">
+                  Interactive dashboard exploring China&apos;s import/export transport patterns — analysing trade volumes, shipping modes, and commodity flows across global corridors.
+                </p>
+                <div className="space-y-3 pt-4 border-t border-gray-100">
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-gray-500 uppercase tracking-wider">Transport Modes</span>
+                    <span className="text-lg font-medium">4</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-gray-500 uppercase tracking-wider">Analysis</span>
+                    <span className="text-lg font-medium text-green-600">YoY Growth</span>
+                  </div>
+                </div>
+                <div className="flex flex-wrap gap-2 pt-4">
+                  <span className="px-3 py-1 text-xs border border-gray-300 rounded-full">Tableau</span>
+                  <span className="px-3 py-1 text-xs border border-gray-300 rounded-full">LOD Expressions</span>
+                  <span className="px-3 py-1 text-xs border border-gray-300 rounded-full">Data Viz</span>
+                </div>
+                <a
+                  href="https://public.tableau.com/app/profile/deepayan.sarkar8273/viz/TransportAnalysisDashboardofChinasImportExport/TransportAnalysisDashboard"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1 text-sm text-gray-500 hover:text-black transition-colors pt-2"
+                >
+                  View on Tableau Public ↗
+                </a>
               </div>
             </FadeIn>
           </div>
@@ -321,12 +359,12 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <footer className="bg-[#111111] text-white pt-20 md:pt-32 pb-16 px-6 md:px-16 mt-16 rounded-t-[2rem] md:rounded-t-[3rem]" id="top">
+      <footer className="bg-[#111111] text-white pt-20 md:pt-32 pb-16 px-6 md:px-16 mt-16 rounded-t-[2rem] md:rounded-t-[3rem]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-16 md:mb-24">
             <div className="md:col-span-1">
               <h2 className="text-4xl md:text-6xl font-serif tracking-tighter mb-6">{"Let's build"} <br /> something.</h2>
-              <p className="text-gray-400 font-light max-w-sm mb-8 text-sm md:text-base">Currently seeking a 4–6 month End-of-Studies Internship in Paris, starting July 2026.</p>
+              <p className="text-gray-400 font-light max-w-sm mb-8 text-sm md:text-base">Currently seeking a 4–6 month End-of-Studies Internship in Paris.</p>
               <a href="mailto:deepayans77@gmail.com" className="inline-flex items-center gap-2 text-base md:text-lg font-medium border-b border-white pb-1 hover:text-gray-300 hover:border-gray-300 transition-colors">
                 deepayans77@gmail.com ↗
               </a>
@@ -342,7 +380,7 @@ export default function Portfolio() {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-40"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                   </span>
-                  July 2026 • Paris
+                  Available Now • Paris
                 </div>
               </div>
             </div>
@@ -355,7 +393,7 @@ export default function Portfolio() {
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-800 text-xs text-gray-500 font-mono gap-4 md:gap-0">
             <p>&copy; {new Date().getFullYear()} Deepayan Sarkar. All rights reserved.</p>
-            <a href="#" className="hover:text-white transition-colors uppercase tracking-widest">Back to Top ↑</a>
+            <a href="#top" className="hover:text-white transition-colors uppercase tracking-widest">Back to Top ↑</a>
           </div>
         </div>
       </footer>
