@@ -368,7 +368,7 @@ export default function Portfolio() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           <FadeIn delay={0.1} className="md:col-span-7 space-y-10 md:space-y-12">
             <div className="space-y-4">
-              <div className="text-xs font-mono text-gray-500 uppercase tracking-widest">Sep 2025 — Oct 2027 • Bordeaux, France</div>
+              <div className="text-xs font-mono text-gray-500 uppercase tracking-widest">Sep 2025 — APR 2027 • Bordeaux, France</div>
               <h3 className="text-2xl md:text-3xl font-serif tracking-tight">KEDGE Business School</h3>
               <p className="text-gray-600 font-light">MSc in Data Analytics for Business</p>
               <div className="flex flex-wrap gap-2 mt-3">
