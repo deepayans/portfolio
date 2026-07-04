@@ -23,37 +23,55 @@ export default function Portfolio() {
         </div>
       </nav>
 
-      <section className="flex flex-col justify-center min-h-screen px-6 md:px-16 max-w-7xl mx-auto pt-20">
-        <div className="max-w-4xl space-y-6 md:space-y-8">
-          <FadeIn delay={0.1}>
-            <div className="inline-flex items-center gap-2 px-3 py-2 border border-green-200 bg-green-50 rounded-full text-xs font-mono text-green-800 uppercase tracking-widest flex-wrap">
-              <span className="relative flex h-2 w-2 shrink-0">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-40"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-600"></span>
-              </span>
-              Available Now • 4–6 Months Internship • Paris, France
+      <section className="min-h-screen px-6 md:px-16 max-w-7xl mx-auto pt-20 flex items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center w-full">
+
+          {/* Left: Text */}
+          <div className="space-y-6 md:space-y-8 order-2 md:order-1">
+            <FadeIn delay={0.1}>
+              <div className="inline-flex items-center gap-2 px-3 py-2 border border-green-200 bg-green-50 rounded-full text-xs font-mono text-green-800 uppercase tracking-widest flex-wrap">
+                <span className="relative flex h-2 w-2 shrink-0">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-40"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-600"></span>
+                </span>
+                Available Now • 4–6 Months Internship • Paris, France
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <h1 className="text-5xl md:text-7xl tracking-tighter leading-[0.9] font-serif">
+                Engineering <br /> Intelligence.
+              </h1>
+            </FadeIn>
+            <FadeIn delay={0.3}>
+              <p className="text-base md:text-lg text-gray-600 font-light leading-relaxed">
+                Production data engineer turned applied data scientist. Four years driving efficiency at Accenture through large-scale ML analytics systems, currently bridging the gap between raw data and business impact via MSc research in Generative AI and computer vision.
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.4}>
+              <div className="pt-2 flex flex-wrap gap-3 md:gap-4 items-center">
+                <a href="mailto:deepayans77@gmail.com" className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-white bg-black rounded-full hover:bg-gray-800 transition-all duration-300">
+                  {"Let's Talk →"}
+                </a>
+                <a href={CV_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-black bg-white border border-gray-200 rounded-full hover:bg-gray-50 transition-all duration-300">
+                  {"Download CV ↓"}
+                </a>
+              </div>
+            </FadeIn>
+          </div>
+
+          {/* Right: Photo */}
+          <FadeIn delay={0.3} className="order-1 md:order-2 flex justify-center md:justify-end">
+            <div className="relative w-72 h-72 md:w-[420px] md:h-[420px] rounded-3xl overflow-hidden border border-gray-200 shadow-sm">
+              <Image
+                src="/deepayan.jpg"
+                alt="Deepayan Sarkar"
+                fill
+                priority
+                className="object-cover object-top"
+              />
             </div>
           </FadeIn>
-          <FadeIn delay={0.2}>
-            <h1 className="text-5xl xs:text-6xl md:text-8xl tracking-tighter leading-[0.9] font-serif">
-              Engineering <br /> Intelligence.
-            </h1>
-          </FadeIn>
-          <FadeIn delay={0.3}>
-            <p className="text-base md:text-xl text-gray-600 max-w-2xl font-light leading-relaxed">
-              Production data engineer turned applied data scientist. Four years driving efficiency at Accenture through large-scale ML analytics systems, currently bridging the gap between raw data and business impact via MSc research in Generative AI and computer vision.
-            </p>
-          </FadeIn>
-          <FadeIn delay={0.4}>
-            <div className="pt-6 md:pt-8 flex flex-wrap gap-3 md:gap-4 items-center">
-              <a href="mailto:deepayans77@gmail.com" className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-white bg-black rounded-full hover:bg-gray-800 transition-all duration-300">
-                {"Let's Talk →"}
-              </a>
-              <a href={CV_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 md:px-8 md:py-4 text-sm font-medium text-black bg-white border border-gray-200 rounded-full hover:bg-gray-50 transition-all duration-300">
-                {"Download CV ↓"}
-              </a>
-            </div>
-          </FadeIn>
+
         </div>
       </section>
 
