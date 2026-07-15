@@ -417,8 +417,7 @@ export default function Portfolio() {
             </div>
             <div className="md:col-span-1 flex flex-col justify-start space-y-4 md:pt-2">
               <p className="text-xs font-mono text-gray-600 uppercase tracking-widest mb-2">Location</p>
-              <p className="text-gray-400 font-light text-sm">Colombes, Île-de-France</p>
-              <p className="text-gray-400 font-light text-sm">France</p>
+              <p className="text-gray-400 font-light text-sm">Colombes, Île-de-France, France</p>
               <div className="pt-4">
                 <p className="text-xs font-mono text-gray-600 uppercase tracking-widest mb-3">Availability</p>
                 <div className="inline-flex items-center gap-2 px-3 py-2 border border-green-800 bg-green-950 rounded-full text-xs font-mono text-green-400 uppercase tracking-widest">
