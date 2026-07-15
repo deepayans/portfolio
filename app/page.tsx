@@ -43,7 +43,7 @@ export default function Portfolio() {
             </FadeIn>
             <FadeIn delay={0.3}>
               <p className="text-base md:text-lg text-gray-600 font-light leading-relaxed">
-                Production data engineer turned applied data scientist. Four years driving efficiency at Accenture through large-scale ML analytics systems, currently bridging the gap between raw data and business impact via MSc research in Generative AI and computer vision.
+                Production data engineer with four years at Accenture building large-scale ML analytics systems for banking, aviation, and consumer electronics clients. Now completing an MSc at KEDGE Business School, specialising in applied machine learning and generative AI.
               </p>
             </FadeIn>
             <FadeIn delay={0.4}>
@@ -172,7 +172,7 @@ export default function Portfolio() {
           <FadeIn delay={0.1} className="h-full">
             <div className="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-400 transition-colors duration-300 flex flex-col h-full">
               <div className="h-44 bg-[#0f0f0f] flex flex-col justify-end p-6 shrink-0">
-                <div className="text-xs font-mono text-gray-500 uppercase tracking-widest mb-3">BNP Paribas · Hackathon Winner</div>
+                <div className="text-xs font-mono text-gray-500 uppercase tracking-widest mb-3">BNP Paribas Hackathon · KEDGE</div>
                 <h3 className="text-2xl font-serif text-white tracking-tight leading-snug">AI Persona Bots</h3>
               </div>
               <div className="p-6 flex flex-col flex-1 gap-4">
